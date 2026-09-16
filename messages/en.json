@@ -40,10 +40,32 @@
   "about": {
     "eyebrow": "About",
     "title": "Get to Know Me",
+    "subtitle": "Dedicated family healthcare emphasizing empathy, early prevention, and diagnostic precision.",
     "philosophy": "Philosophy of Care",
     "philosophyText": "Every patient comes with a unique story and hope. Effective care is more than prescribing medicine; it means listening with empathy, educating honestly, and designing evidence-based treatment that honors the patient.",
     "signature": "Warm regards,",
     "imageAlt": "dr. Silvia Agustina caring for a patient",
+    "cta": "Book a Consultation",
+    "viewCredentials": "View Full Credentials",
+    "highlights": {
+      "fkui": "FKUI Graduate",
+      "str": "Verified Medical License",
+      "exp": "8+ Years Clinical Practice"
+    },
+    "pillars": {
+      "p1": {
+        "title": "Empathetic Care",
+        "desc": "Thorough and patient-centered listening without rushing."
+      },
+      "p2": {
+        "title": "Evidence-Based (EBM)",
+        "desc": "Diagnoses and treatments grounded in the latest medical science."
+      },
+      "p3": {
+        "title": "Preventive Focus",
+        "desc": "Preventing complications through screening and lifestyle coaching."
+      }
+    },
     "bio": [
       "Since completing her medical education and professional program at Universitas Indonesia, dr. Silvia Agustina has firmly believed that the strongest pillar of any nation's healthcare system lies in robust primary care. Caring for thousands of patients—from urgent emergencies during her hospital internship to outpatient consultations in metropolitan clinics—has shaped her holistic clinical philosophy: seeing the whole person, not merely a collection of symptoms.",
       "In her daily practice in South Jakarta, dr. Silvia actively champions early detection and sustainable lifestyle modifications to curb metabolic disorders. She believes every consultation is an educational opportunity; patients deserve to understand the mechanisms behind their condition and the reasoning behind every therapy."

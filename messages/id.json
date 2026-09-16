@@ -40,10 +40,32 @@
   "about": {
     "eyebrow": "Tentang",
     "title": "Mengenal Lebih Dekat",
+    "subtitle": "Dedikasi pelayanan kedokteran keluarga yang mengutamakan empati, pencegahan dini, dan ketepatan diagnosis.",
     "philosophy": "Filosofi Pelayanan",
     "philosophyText": "Setiap pasien yang datang membawa cerita dan harapan. Pengobatan efektif bukan sekadar meresepkan obat, melainkan mendengarkan dengan empati, mengedukasi dengan jujur, dan merancang perawatan berbasis bukti ilmiah terkini.",
     "signature": "Salam hangat,",
     "imageAlt": "dr. Silvia Agustina sedang melayani pasien",
+    "cta": "Konsultasikan Keluhan Anda",
+    "viewCredentials": "Lihat Kredensial Lengkap",
+    "highlights": {
+      "fkui": "Lulusan FKUI",
+      "str": "STR Terverifikasi",
+      "exp": "8+ Tahun Klinis"
+    },
+    "pillars": {
+      "p1": {
+        "title": "Pelayanan Empatis",
+        "desc": "Mendengarkan keluhan secara saksama tanpa terburu-buru."
+      },
+      "p2": {
+        "title": "Berbasis Bukti (EBM)",
+        "desc": "Diagnosis dan terapi bersandar pada pedoman sains medis terkini."
+      },
+      "p3": {
+        "title": "Fokus Preventif",
+        "desc": "Mencegah komplikasi melalui skrining dini dan edukasi gaya hidup."
+      }
+    },
     "bio": [
       "Sejak menyelesaikan pendidikan kedokteran dan program profesi di Universitas Indonesia, dr. Silvia Agustina meyakini bahwa pilar terkuat dari sistem kesehatan sebuah bangsa berada pada pelayanan primer yang tangguh. Pengalaman menangani ribuan kasus medis—mulai dari kegawatdaruratan saat masa internship di RSUD daerah hingga konsultasi rawat jalan di klinik metropolitan—membentuk pendekatan klinis yang menyeluruh: melihat pasien sebagai manusia seutuhnya, bukan sekadar kumpulan gejala klinis.",
       "Dalam praktiknya sehari-hari di Jakarta Selatan, dr. Silvia aktif mengadvokasi pentingnya deteksi dini dan modifikasi gaya hidup untuk menekan prevalensi sindrom metabolik. Beliau percaya bahwa waktu konsultasi adalah momen edukasi; pasien berhak memahami mekanisme di balik penyakit mereka dan alasan di balik setiap terapi yang diberikan."
