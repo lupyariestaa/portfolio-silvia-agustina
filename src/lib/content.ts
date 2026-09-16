@@ -16,8 +16,8 @@ export const site = {
   whatsappMessage: "Halo dr. Silvia, saya ingin membuat janji temu.",
   address: "Jl. Kesehatan No. 123, Jakarta Selatan, DKI Jakarta 12345",
   mapsEmbed:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5!2d106.8!3d-6.2",
-  mapsLink: "https://maps.google.com",
+    "https://maps.google.com/maps?q=Jl.+Kesehatan+No.+123,+Jakarta+Selatan&t=&z=15&ie=UTF8&iwloc=&output=embed",
+  mapsLink: "https://maps.google.com/?q=Jl.+Kesehatan+No.+123,+Jakarta+Selatan",
   avatar:
     "https://images.unsplash.com/photo-1734002886107-168181bcd6a1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   heroImage:
