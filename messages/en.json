@@ -1,0 +1,407 @@
+{
+  "common": {
+    "skipToContent": "Skip to main content",
+    "placeholderTitle": "Phase 1 — Setup complete",
+    "placeholderSubtitle": "Project structure, i18n, and design system are ready. Sections will be built in the upcoming phases.",
+    "bookAppointment": "Book Appointment",
+    "chatWhatsApp": "Chat on WhatsApp",
+    "viewAll": "View All",
+    "viewDetail": "View Detail",
+    "readMore": "Read More",
+    "switchLanguage": "Switch Language"
+  },
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "schedule": "Schedule",
+    "publications": "Publications",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Welcome",
+    "name": "dr. Silvia Agustina",
+    "role": "General Practitioner",
+    "tagline": "Empathetic, professional, and evidence-based healthcare for you and your family.",
+    "statusBadge": "Accepting New Patients",
+    "location": "Jakarta, Indonesia",
+    "photoAlt": "Photo of dr. Silvia Agustina",
+    "scroll": "Scroll to explore",
+    "statsExperience": "Years of Experience",
+    "statsPatients": "Patients Treated",
+    "statsPublications": "Publications",
+    "statsCertifications": "Certifications"
+  },
+  "trust": {
+    "title": "Trusted by patients and peers",
+    "subtitle": "A consistent and dependable record of care."
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "Get to Know Me",
+    "philosophy": "Philosophy of Care",
+    "philosophyText": "Every patient is an individual with a unique story and needs. I believe the best care comes from listening with empathy, explaining clearly, and making decisions grounded in scientific evidence.",
+    "signature": "Warm regards,",
+    "imageAlt": "dr. Silvia Agustina caring for a patient",
+    "bio": [
+      "Placeholder bio paragraph one — a short introduction to dr. Silvia Agustina's background and dedication to healthcare.",
+      "Placeholder bio paragraph two — experience, approach to care, and commitment to patients."
+    ]
+  },
+  "credentials": {
+    "eyebrow": "Credentials",
+    "title": "Education & Licenses",
+    "subtitle": "Formal credentials supporting the practice of healthcare.",
+    "education": "Education",
+    "license": "License & Registration",
+    "organization": "Organization",
+    "certifications": "Certifications"
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "Medical Services",
+    "subtitle": "A range of healthcare services available for you and your family.",
+    "learnMore": "Learn more",
+    "list": {
+      "konsultasi-umum": {
+        "title": "General Health Consultation",
+        "desc": "Examination and consultation for general health complaints with a holistic approach."
+      },
+      "medical-checkup": {
+        "title": "Physical Exam / Check-Up",
+        "desc": "Comprehensive medical check-up for early detection and health monitoring."
+      },
+      "vaksinasi": {
+        "title": "Vaccination",
+        "desc": "Immunization services for children and adults according to recommended schedules."
+      },
+      "penyakit-kronis": {
+        "title": "Chronic Disease Management",
+        "desc": "Monitoring and management of conditions like hypertension, diabetes, and cholesterol."
+      },
+      "gaya-hidup-sehat": {
+        "title": "Healthy Lifestyle Consultation",
+        "desc": "Guidance on nutrition, activity, and habits for long-term health."
+      },
+      "surat-keterangan-sehat": {
+        "title": "Medical Certificate",
+        "desc": "Issuance of health certificates for work, school, or travel purposes."
+      },
+      "konsultasi-online": {
+        "title": "Online Consultation",
+        "desc": "Remote consultation via telemedicine for convenient access to healthcare."
+      },
+      "kesehatan-keluarga": {
+        "title": "Family Health Services",
+        "desc": "Continuous health support for all members of the family."
+      }
+    },
+    "detail": {
+      "includes": "What's Included",
+      "preparation": "Preparation",
+      "faqTitle": "Questions About This Service",
+      "bookThis": "Book This Service",
+      "backToServices": "Back to Services",
+      "empty": "Service not found.",
+      "konsultasi-umum": {
+        "longDesc": "General health consultation for a wide range of complaints, from fever, cough, and pain to issues of unclear origin. Examinations are thorough with a personal approach.",
+        "i1": "Complete history taking and physical exam",
+        "i2": "Explanation of diagnosis and treatment plan",
+        "i3": "Prescription and home care advice",
+        "i4": "Referral when needed",
+        "p1": "Bring identification and insurance card (if any)",
+        "p2": "Note your complaints and current medications",
+        "p3": "Arrive according to the confirmed schedule"
+      },
+      "medical-checkup": {
+        "longDesc": "A comprehensive health examination for early detection of various conditions, monitoring risk factors, and maintaining long-term health. Ideal for routine annual check-ups.",
+        "i1": "Physical exam and vital signs",
+        "i2": "Laboratory tests according to the package",
+        "i3": "Risk factor assessment",
+        "i4": "Results consultation and follow-up recommendations",
+        "p1": "Fast as instructed for certain tests",
+        "p2": "Bring previous examination results if available",
+        "p3": "Get enough rest before the examination"
+      },
+      "vaksinasi": {
+        "longDesc": "Immunization services for children and adults according to recommended schedules. Vaccination helps protect you and those around you from preventable diseases.",
+        "i1": "Vaccination eligibility consultation",
+        "i2": "Vaccine administration per schedule",
+        "i3": "Immunization record keeping",
+        "i4": "Post-vaccination reaction monitoring",
+        "p1": "Inform us of any allergy history",
+        "p2": "Bring your immunization record if available",
+        "p3": "Make sure your body is fit"
+      },
+      "penyakit-kronis": {
+        "longDesc": "Monitoring and management of chronic conditions such as hypertension, diabetes, and cholesterol disorders. Focused on long-term control and complication prevention.",
+        "i1": "Regular examination and monitoring",
+        "i2": "Medication therapy adjustment",
+        "i3": "Lifestyle and diet education",
+        "i4": "Laboratory result monitoring",
+        "p1": "Bring your routine medication list",
+        "p2": "Bring your latest laboratory results",
+        "p3": "Note any complaints or condition changes"
+      },
+      "gaya-hidup-sehat": {
+        "longDesc": "Consultation to build sustainable healthy habits, covering nutrition, physical activity, sleep, and stress management tailored to your condition.",
+        "i1": "Comprehensive lifestyle assessment",
+        "i2": "Personalized nutrition recommendations",
+        "i3": "Physical activity guidance",
+        "i4": "Progress monitoring plan",
+        "p1": "Note your daily diet and activity patterns",
+        "p2": "Set realistic health goals",
+        "p3": "Bring weight and blood pressure data if available"
+      },
+      "surat-keterangan-sehat": {
+        "longDesc": "Issuance of medical certificates for work, school, travel, or other administrative purposes after an appropriate brief examination.",
+        "i1": "Brief physical examination",
+        "i2": "Verification of certificate needs",
+        "i3": "Issuance of official certificate",
+        "i4": "Explanation of examination results",
+        "p1": "Inform us of the certificate's purpose",
+        "p2": "Bring personal identification",
+        "p3": "Come in good health for the examination"
+      },
+      "konsultasi-online": {
+        "longDesc": "Remote consultation via telemedicine for convenient access to healthcare without visiting the clinic. Ideal for minor complaints and follow-ups.",
+        "i1": "Video or chat consultation",
+        "i2": "Online assessment of complaints",
+        "i3": "Electronic prescription when needed",
+        "i4": "Referral when needed",
+        "p1": "Ensure a stable internet connection",
+        "p2": "Prepare your list of complaints and medications",
+        "p3": "Choose a quiet and private place"
+      },
+      "kesehatan-keluarga": {
+        "longDesc": "Continuous health support for all family members, from children to the elderly, with attention to prevention and routine monitoring.",
+        "i1": "Examination of all family members",
+        "i2": "Child growth and development monitoring",
+        "i3": "Family health education",
+        "i4": "Periodic examination plan",
+        "p1": "Bring health data for all members",
+        "p2": "Note the family's disease history",
+        "p3": "Prepare a list of questions for the doctor"
+      }
+    }
+  },
+  "career": {
+    "eyebrow": "Journey",
+    "title": "Career Path",
+    "subtitle": "Each stage shaped the approach to care I practice today.",
+    "list": {
+      "career1": {
+        "title": "Medical Degree (S1)",
+        "desc": "Studied medicine and built the foundation of medical science."
+      },
+      "career2": {
+        "title": "Medical Profession Program",
+        "desc": "Clinical education and hands-on practice at a teaching hospital."
+      },
+      "career3": {
+        "title": "Medical Internship",
+        "desc": "Completed internship at a public hospital, handling diverse patient cases."
+      },
+      "career4": {
+        "title": "General Practitioner — Clinic",
+        "desc": "Served outpatients in a clinic with a focus on primary care."
+      },
+      "career5": {
+        "title": "GP — Hospital & Private Practice",
+        "desc": "Combining hospital practice and private practice to the present day."
+      }
+    }
+  },
+  "schedule": {
+    "eyebrow": "Schedule",
+    "title": "Practice Schedule & Location",
+    "subtitle": "Please choose the time and place most convenient for you.",
+    "day": "Day",
+    "time": "Time",
+    "place": "Place",
+    "mapTitle": "Practice Location Map",
+    "openMap": "Open in Google Maps",
+    "note": "Schedules may change. We recommend contacting us before your visit.",
+    "days": {
+      "monTueWedThuFri": "Monday – Friday",
+      "monWedFri": "Monday, Wednesday, Friday",
+      "sat": "Saturday"
+    }
+  },
+  "publications": {
+    "eyebrow": "Publications",
+    "title": "Publications & Research",
+    "subtitle": "Scientific works and contributions in the medical field.",
+    "readPaper": "Read Paper"
+  },
+  "blog": {
+    "eyebrow": "Blog",
+    "title": "Health Articles",
+    "subtitle": "Trusted health information and tips.",
+    "allArticles": "View All Articles",
+    "minRead": "min read",
+    "readArticle": "Read Article",
+    "list": {
+      "tidur-berkualitas": {
+        "title": "The Importance of Quality Sleep for Health",
+        "excerpt": "Poor sleep affects immunity, mood, and productivity. Learn how to build healthy sleep habits."
+      },
+      "mitos-nutrisi": {
+        "title": "Nutrition Myths vs Facts",
+        "excerpt": "Much nutrition info is misleading. Let's clear up some common myths with evidence-based explanations."
+      },
+      "cegah-demam-berdarah": {
+        "title": "Simple Steps to Prevent Dengue Fever",
+        "excerpt": "Dengue prevention starts in your surroundings. Here are practical steps you can take at home."
+      }
+    },
+    "page": {
+      "title": "All Health Articles",
+      "subtitle": "A collection of health education articles for you and your family.",
+      "allCategory": "All",
+      "empty": "No articles in this category.",
+      "backToBlog": "Back to Blog",
+      "related": "Related Articles",
+      "share": "Share",
+      "ctaTitle": "Have a health question?",
+      "ctaSubtitle": "Don't hesitate to consult directly with dr. Silvia.",
+      "detail": {
+        "tidur-berkualitas": {
+          "p1": "Sleep is not merely rest time; it is an essential process in which the body repairs tissue, consolidates memory, and balances hormones. Good sleep quality directly affects immunity, mood, and concentration.",
+          "h1": "The Impact of Poor Sleep Quality",
+          "p2": "Long-term sleep deprivation is linked to a higher risk of hypertension, type 2 diabetes, and reduced immune function. It also worsens anxiety and daily productivity.",
+          "h2": "Building Healthy Sleep Habits",
+          "p3": "Set consistent sleep and wake times, avoid caffeine in the afternoon, and create a dark and cool room. Also limit screen exposure for at least one hour before bed.",
+          "p4": "If sleep problems last more than a few weeks and disrupt your activities, consult a doctor for further evaluation."
+        },
+        "mitos-nutrisi": {
+          "p1": "Nutrition information spreads easily without verification. As a result, many myths are believed despite lacking scientific evidence. Let's clear up a few of them.",
+          "h1": "Common Nutrition Myths",
+          "p2": "The idea that carbohydrates are always bad or that eating at night automatically adds weight is not entirely true. What matters most is the quality of food and overall portions.",
+          "h2": "More Trustworthy Principles",
+          "p3": "Focus on a balanced diet rich in vegetables, fruits, protein, and whole grains. No single food alone determines your health.",
+          "p4": "Consult your specific nutritional needs, especially if you have certain medical conditions, so recommendations are more targeted."
+        },
+        "cegah-demam-berdarah": {
+          "p1": "Dengue fever is transmitted through the bite of Aedes aegypti mosquitoes that breed in clean standing water. The most effective prevention starts at home.",
+          "h1": "3M Plus: The Core Prevention Steps",
+          "p2": "Drain water storage containers, seal them tightly, and recycle used items that can hold water. Add plus steps such as using mosquito repellent and keeping larvae-eating fish.",
+          "h2": "When to Be Alert",
+          "p3": "Watch for sudden high fever, muscle pain, rash, and low platelets. Seek medical attention promptly if these signs appear, especially in children.",
+          "p4": "Early detection and proper treatment greatly reduce the risk of complications. Don't delay consultation if symptoms worsen."
+        }
+      }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "What Patients Say",
+    "subtitle": "Experiences from patients who have received care.",
+    "list": {
+      "t1": {
+        "quote": "The doctor was very thorough and explained everything patiently. I now understand my health condition much better.",
+        "name": "R. D."
+      },
+      "t2": {
+        "quote": "Friendly and professional service. My child, who is usually afraid of doctors, felt much calmer.",
+        "name": "A. S."
+      },
+      "t3": {
+        "quote": "The consultation was clear and unhurried. Highly recommended for the whole family.",
+        "name": "M. A."
+      },
+      "t4": {
+        "quote": "Online consultation is available for a busy schedule. Very helpful and still feels personal.",
+        "name": "N. W."
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Can't find the answer? Feel free to contact us.",
+    "list": {
+      "q1": {
+        "q": "Do I need to make an appointment before coming?",
+        "a": "For your comfort and to avoid long queues, we strongly recommend booking in advance via the form or WhatsApp."
+      },
+      "q2": {
+        "q": "How do I make an appointment?",
+        "a": "You can fill in the appointment form on this website or contact us directly via WhatsApp. Our team will confirm your schedule."
+      },
+      "q3": {
+        "q": "Do you accept certain insurance plans?",
+        "a": "Please contact us first for the latest information on available insurance partnerships."
+      },
+      "q4": {
+        "q": "Do you provide online consultation?",
+        "a": "Yes, online consultation is available via telemedicine. Technical details will be provided upon scheduling."
+      },
+      "q5": {
+        "q": "What is the estimated consultation fee?",
+        "a": "The consultation fee varies depending on the type of service and practice location. Details will be provided upon confirmation."
+      },
+      "q6": {
+        "q": "Can I consult in English?",
+        "a": "Yes, consultations can be conducted in both Indonesian and English."
+      },
+      "q7": {
+        "q": "What is the procedure for a medical certificate?",
+        "a": "A medical certificate is issued after a brief physical examination. Please inform us of your needs when booking."
+      },
+      "q8": {
+        "q": "Do you accept pediatric patients?",
+        "a": "As a general practitioner, we accept patients of all ages, including children, for general health complaints."
+      }
+    }
+  },
+  "booking": {
+    "eyebrow": "Appointment",
+    "title": "Book an Appointment",
+    "subtitle": "Fill in the form below, your message will be forwarded to the doctor's WhatsApp.",
+    "name": "Full Name",
+    "namePlaceholder": "Enter your full name",
+    "phone": "WhatsApp Number",
+    "phonePlaceholder": "e.g. 08123456789",
+    "date": "Preferred Date",
+    "time": "Time",
+    "timePlaceholder": "e.g. 09:00",
+    "service": "Service Type",
+    "servicePlaceholder": "Select a service",
+    "notes": "Complaint / Notes (optional)",
+    "notesPlaceholder": "Describe your complaint or needs",
+    "submit": "Send via WhatsApp",
+    "required": "Required",
+    "invalidPhone": "Invalid number",
+    "success": "Thank you! You will be redirected to WhatsApp."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Get in Touch",
+    "subtitle": "Have a question? Send a message and we'll get back to you shortly.",
+    "formName": "Name",
+    "formEmail": "Email",
+    "formPhone": "Phone",
+    "formSubject": "Subject",
+    "formMessage": "Message",
+    "formSubmit": "Send Message",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Operating Hours",
+    "followUs": "Follow Us"
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "social": "Social Media",
+    "disclaimer": "The information on this website is general in nature and does not replace professional medical consultation. Always consult your health condition directly with a doctor.",
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "subtitle": "Sorry, the page you are looking for is not available.",
+    "backHome": "Back to Home"
+  }
+}

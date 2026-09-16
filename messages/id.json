@@ -1,0 +1,407 @@
+{
+  "common": {
+    "skipToContent": "Lewati ke konten utama",
+    "placeholderTitle": "Fase 1 — Setup selesai",
+    "placeholderSubtitle": "Struktur project, i18n, dan sistem desain sudah siap. Section akan dibangun pada fase berikutnya.",
+    "bookAppointment": "Buat Janji Temu",
+    "chatWhatsApp": "Chat WhatsApp",
+    "viewAll": "Lihat Semua",
+    "viewDetail": "Lihat Detail",
+    "readMore": "Baca Selengkapnya",
+    "switchLanguage": "Ganti Bahasa"
+  },
+  "nav": {
+    "about": "Tentang",
+    "services": "Layanan",
+    "schedule": "Jadwal",
+    "publications": "Publikasi",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Kontak"
+  },
+  "hero": {
+    "greeting": "Selamat datang",
+    "name": "dr. Silvia Agustina",
+    "role": "Dokter Umum",
+    "tagline": "Pelayanan kesehatan yang empatik, profesional, dan berbasis bukti untuk Anda dan keluarga.",
+    "statusBadge": "Menerima Pasien Baru",
+    "location": "Jakarta, Indonesia",
+    "photoAlt": "Foto dr. Silvia Agustina",
+    "scroll": "Gulir untuk menjelajah",
+    "statsExperience": "Tahun Pengalaman",
+    "statsPatients": "Pasien Ditangani",
+    "statsPublications": "Publikasi",
+    "statsCertifications": "Sertifikasi"
+  },
+  "trust": {
+    "title": "Dipercaya oleh pasien dan sejawat",
+    "subtitle": "Rekam jejak pelayanan yang konsisten dan terpercaya."
+  },
+  "about": {
+    "eyebrow": "Tentang",
+    "title": "Mengenal Lebih Dekat",
+    "philosophy": "Filosofi Pelayanan",
+    "philosophyText": "Setiap pasien adalah individu dengan cerita dan kebutuhan unik. Saya percaya pelayanan terbaik lahir dari mendengarkan dengan empati, menjelaskan dengan jelas, dan mengambil keputusan berbasis bukti ilmiah.",
+    "signature": "Salam hangat,",
+    "imageAlt": "dr. Silvia Agustina sedang melayani pasien",
+    "bio": [
+      "Bio placeholder paragraf pertama — deskripsi singkat tentang latar belakang dan dedikasi dr. Silvia Agustina dalam dunia kesehatan.",
+      "Bio placeholder paragraf kedua — pengalaman, pendekatan pelayanan, dan komitmen terhadap pasien."
+    ]
+  },
+  "credentials": {
+    "eyebrow": "Kredensial",
+    "title": "Pendidikan & Lisensi",
+    "subtitle": "Kredensial formal yang menunjang praktik pelayanan kesehatan.",
+    "education": "Pendidikan",
+    "license": "Lisensi & Registrasi",
+    "organization": "Organisasi",
+    "certifications": "Sertifikasi"
+  },
+  "services": {
+    "eyebrow": "Layanan",
+    "title": "Layanan Medis",
+    "subtitle": "Berbagai layanan kesehatan yang tersedia untuk Anda dan keluarga.",
+    "learnMore": "Selengkapnya",
+    "list": {
+      "konsultasi-umum": {
+        "title": "Konsultasi Kesehatan Umum",
+        "desc": "Pemeriksaan dan konsultasi keluhan kesehatan umum dengan pendekatan menyeluruh."
+      },
+      "medical-checkup": {
+        "title": "Pemeriksaan Fisik / MCU",
+        "desc": "Medical check-up menyeluruh untuk deteksi dini dan pemantauan kondisi kesehatan."
+      },
+      "vaksinasi": {
+        "title": "Vaksinasi",
+        "desc": "Layanan imunisasi untuk anak maupun dewasa sesuai jadwal yang dianjurkan."
+      },
+      "penyakit-kronis": {
+        "title": "Pengelolaan Penyakit Kronis",
+        "desc": "Pemantauan dan tata laksana kondisi seperti hipertensi, diabetes, dan kolesterol."
+      },
+      "gaya-hidup-sehat": {
+        "title": "Konsultasi Gaya Hidup Sehat",
+        "desc": "Panduan nutrisi, aktivitas, dan pola hidup untuk kesehatan jangka panjang."
+      },
+      "surat-keterangan-sehat": {
+        "title": "Surat Keterangan Sehat",
+        "desc": "Penerbitan surat keterangan sehat untuk keperluan kerja, sekolah, atau perjalanan."
+      },
+      "konsultasi-online": {
+        "title": "Konsultasi Online",
+        "desc": "Konsultasi jarak jauh via telemedicine untuk kemudahan akses layanan kesehatan."
+      },
+      "kesehatan-keluarga": {
+        "title": "Layanan Kesehatan Keluarga",
+        "desc": "Pendampingan kesehatan berkelanjutan untuk seluruh anggota keluarga."
+      }
+    },
+    "detail": {
+      "includes": "Yang Termasuk",
+      "preparation": "Persiapan",
+      "faqTitle": "Pertanyaan Seputar Layanan Ini",
+      "bookThis": "Buat Janji untuk Layanan Ini",
+      "backToServices": "Kembali ke Layanan",
+      "empty": "Layanan tidak ditemukan.",
+      "konsultasi-umum": {
+        "longDesc": "Layanan konsultasi kesehatan umum untuk berbagai keluhan, mulai dari demam, batuk, nyeri, hingga keluhan yang belum jelas penyebabnya. Pemeriksaan dilakukan secara menyeluruh dengan pendekatan yang personal.",
+        "i1": "Anamnesis dan pemeriksaan fisik lengkap",
+        "i2": "Penjelasan diagnosis dan rencana tata laksana",
+        "i3": "Resep dan anjuran perawatan di rumah",
+        "i4": "Rujukan bila diperlukan",
+        "p1": "Bawa identitas dan kartu asuransi (jika ada)",
+        "p2": "Catat keluhan dan riwayat obat yang sedang dikonsumsi",
+        "p3": "Datang sesuai jadwal yang telah dikonfirmasi"
+      },
+      "medical-checkup": {
+        "longDesc": "Pemeriksaan kesehatan menyeluruh untuk mendeteksi dini berbagai kondisi, memantau faktor risiko, dan menjaga kesehatan jangka panjang. Cocok untuk pemeriksaan rutin tahunan.",
+        "i1": "Pemeriksaan fisik dan tanda vital",
+        "i2": "Pemeriksaan laboratorium sesuai paket",
+        "i3": "Penilaian faktor risiko",
+        "i4": "Konsultasi hasil dan rekomendasi lanjutan",
+        "p1": "Puasa sesuai instruksi untuk pemeriksaan tertentu",
+        "p2": "Bawa hasil pemeriksaan sebelumnya bila ada",
+        "p3": "Istirahat cukup sebelum pemeriksaan"
+      },
+      "vaksinasi": {
+        "longDesc": "Layanan imunisasi untuk anak maupun dewasa sesuai jadwal yang dianjurkan. Vaksinasi membantu melindungi diri dan orang di sekitar dari penyakit yang dapat dicegah.",
+        "i1": "Konsultasi kelayakan vaksinasi",
+        "i2": "Pemberian vaksin sesuai jadwal",
+        "i3": "Pencatatan buku imunisasi",
+        "i4": "Pemantauan reaksi pasca vaksinasi",
+        "p1": "Informasikan riwayat alergi",
+        "p2": "Bawa buku imunisasi bila ada",
+        "p3": "Pastikan kondisi tubuh sedang fit"
+      },
+      "penyakit-kronis": {
+        "longDesc": "Pemantauan dan tata laksana kondisi kronis seperti hipertensi, diabetes, dan gangguan kolesterol. Fokus pada pengendalian jangka panjang dan pencegahan komplikasi.",
+        "i1": "Pemeriksaan dan pemantauan berkala",
+        "i2": "Penyesuaian terapi obat",
+        "i3": "Edukasi gaya hidup dan pola makan",
+        "i4": "Pemantauan hasil laboratorium",
+        "p1": "Bawa catatan obat rutin",
+        "p2": "Bawa hasil laboratorium terakhir",
+        "p3": "Catat keluhan atau perubahan kondisi"
+      },
+      "gaya-hidup-sehat": {
+        "longDesc": "Konsultasi untuk membangun pola hidup sehat secara berkelanjutan, mencakup nutrisi, aktivitas fisik, tidur, dan manajemen stres yang disesuaikan dengan kondisi Anda.",
+        "i1": "Penilaian gaya hidup menyeluruh",
+        "i2": "Rekomendasi nutrisi personal",
+        "i3": "Panduan aktivitas fisik",
+        "i4": "Rencana pemantauan progres",
+        "p1": "Catat pola makan dan aktivitas harian",
+        "p2": "Tentukan target kesehatan yang realistis",
+        "p3": "Bawa data berat badan dan tekanan darah bila ada"
+      },
+      "surat-keterangan-sehat": {
+        "longDesc": "Penerbitan surat keterangan sehat untuk keperluan kerja, sekolah, perjalanan, atau administrasi lainnya setelah pemeriksaan singkat yang sesuai.",
+        "i1": "Pemeriksaan fisik singkat",
+        "i2": "Verifikasi kebutuhan surat",
+        "i3": "Penerbitan surat resmi",
+        "i4": "Penjelasan hasil pemeriksaan",
+        "p1": "Informasikan tujuan surat keterangan",
+        "p2": "Bawa identitas diri",
+        "p3": "Datang dalam kondisi sehat untuk pemeriksaan"
+      },
+      "konsultasi-online": {
+        "longDesc": "Konsultasi jarak jauh melalui telemedicine untuk kemudahan akses layanan kesehatan tanpa harus datang ke klinik. Cocok untuk keluhan ringan dan tindak lanjut.",
+        "i1": "Konsultasi video atau chat",
+        "i2": "Penilaian keluhan secara daring",
+        "i3": "Resep elektronik bila diperlukan",
+        "i4": "Rujukan bila diperlukan",
+        "p1": "Pastikan koneksi internet stabil",
+        "p2": "Siapkan daftar keluhan dan obat",
+        "p3": "Pilih tempat yang tenang dan privat"
+      },
+      "kesehatan-keluarga": {
+        "longDesc": "Pendampingan kesehatan berkelanjutan untuk seluruh anggota keluarga, dari anak hingga lansia, dengan perhatian pada pencegahan dan pemantauan rutin.",
+        "i1": "Pemeriksaan seluruh anggota keluarga",
+        "i2": "Pemantauan tumbuh kembang anak",
+        "i3": "Edukasi kesehatan keluarga",
+        "i4": "Rencana pemeriksaan berkala",
+        "p1": "Bawa data kesehatan seluruh anggota",
+        "p2": "Catat riwayat penyakit keluarga",
+        "p3": "Siapkan daftar pertanyaan untuk dokter"
+      }
+    }
+  },
+  "career": {
+    "eyebrow": "Perjalanan",
+    "title": "Alur Perjalanan Karier",
+    "subtitle": "Setiap tahap membentuk pendekatan pelayanan yang saya jalani hari ini.",
+    "list": {
+      "career1": {
+        "title": "S1 Kedokteran",
+        "desc": "Menempuh pendidikan kedokteran dan membangun dasar ilmu medis."
+      },
+      "career2": {
+        "title": "Program Profesi Dokter",
+        "desc": "Pendidikan klinik dan praktik langsung di rumah sakit pendidikan."
+      },
+      "career3": {
+        "title": "Dokter Internship",
+        "desc": "Menjalani internship di RSUD, menangani beragam kasus pasien."
+      },
+      "career4": {
+        "title": "Dokter Umum — Klinik",
+        "desc": "Melayani pasien rawat jalan di klinik dengan fokus pelayanan primer."
+      },
+      "career5": {
+        "title": "Dokter Umum — RS & Praktik Mandiri",
+        "desc": "Menggabungkan praktik di rumah sakit dan praktik mandiri hingga kini."
+      }
+    }
+  },
+  "schedule": {
+    "eyebrow": "Jadwal",
+    "title": "Jadwal Praktik & Lokasi",
+    "subtitle": "Silakan pilih waktu dan tempat yang paling nyaman untuk Anda.",
+    "day": "Hari",
+    "time": "Jam",
+    "place": "Tempat",
+    "mapTitle": "Peta Lokasi Praktik",
+    "openMap": "Buka di Google Maps",
+    "note": "Jadwal dapat berubah. Disarankan menghubungi terlebih dahulu sebelum berkunjung.",
+    "days": {
+      "monTueWedThuFri": "Senin – Jumat",
+      "monWedFri": "Senin, Rabu, Jumat",
+      "sat": "Sabtu"
+    }
+  },
+  "publications": {
+    "eyebrow": "Publikasi",
+    "title": "Publikasi & Penelitian",
+    "subtitle": "Karya ilmiah dan kontribusi dalam dunia medis.",
+    "readPaper": "Baca Paper"
+  },
+  "blog": {
+    "eyebrow": "Blog",
+    "title": "Artikel Kesehatan",
+    "subtitle": "Informasi dan tips kesehatan terpercaya.",
+    "allArticles": "Lihat Semua Artikel",
+    "minRead": "menit baca",
+    "readArticle": "Baca Artikel",
+    "list": {
+      "tidur-berkualitas": {
+        "title": "Pentingnya Tidur Berkualitas untuk Kesehatan",
+        "excerpt": "Kurang tidur berdampak pada imunitas, mood, dan produktivitas. Kenali cara membangun kebiasaan tidur yang sehat."
+      },
+      "mitos-nutrisi": {
+        "title": "Mitos vs Fakta Seputar Nutrisi",
+        "excerpt": "Banyak informasi gizi yang menyesatkan. Mari luruskan beberapa mitos umum dengan penjelasan berbasis bukti."
+      },
+      "cegah-demam-berdarah": {
+        "title": "Langkah Sederhana Mencegah Demam Berdarah",
+        "excerpt": "Pencegahan DBD dimulai dari lingkungan sekitar. Simak langkah praktis yang bisa dilakukan di rumah."
+      }
+    },
+    "page": {
+      "title": "Semua Artikel Kesehatan",
+      "subtitle": "Kumpulan tulisan edukasi kesehatan untuk Anda dan keluarga.",
+      "allCategory": "Semua",
+      "empty": "Tidak ada artikel pada kategori ini.",
+      "backToBlog": "Kembali ke Blog",
+      "related": "Artikel Terkait",
+      "share": "Bagikan",
+      "ctaTitle": "Punya pertanyaan kesehatan?",
+      "ctaSubtitle": "Jangan ragu untuk berkonsultasi langsung dengan dr. Silvia.",
+      "detail": {
+        "tidur-berkualitas": {
+          "p1": "Tidur bukan sekadar waktu istirahat, melainkan proses penting di mana tubuh memperbaiki jaringan, mengonsolidasi memori, dan menyeimbangkan hormon. Kualitas tidur yang baik berpengaruh langsung pada imunitas, suasana hati, dan kemampuan berkonsentrasi.",
+          "h1": "Dampak Kualitas Tidur yang Buruk",
+          "p2": "Kurang tidur dalam jangka panjang dikaitkan dengan risiko lebih tinggi terhadap hipertensi, diabetes tipe 2, dan penurunan daya tahan tubuh. Selain itu, kurang tidur juga memperburuk kecemasan dan produktivitas harian.",
+          "h2": "Membangun Kebiasaan Tidur yang Sehat",
+          "p3": "Tetapkan jam tidur dan bangun yang konsisten, hindari kafein setelah sore hari, dan ciptakan kamar yang gelap serta sejuk. Batasi pula paparan layar setidaknya satu jam sebelum tidur.",
+          "p4": "Jika gangguan tidur berlangsung lebih dari beberapa minggu dan mengganggu aktivitas, sebaiknya konsultasikan dengan dokter untuk evaluasi lebih lanjut."
+        },
+        "mitos-nutrisi": {
+          "p1": "Informasi seputar gizi mudah tersebar tanpa verifikasi. Akibatnya, banyak mitos yang dipercaya meski tidak didukung bukti ilmiah. Mari luruskan beberapa di antaranya.",
+          "h1": "Mitos Umum Seputar Nutrisi",
+          "p2": "Anggapan bahwa karbohidrat selalu buruk atau bahwa makan malam otomatis menambah berat badan tidak sepenuhnya benar. Yang paling menentukan adalah kualitas makanan dan porsi secara keseluruhan.",
+          "h2": "Prinsip yang Lebih Dapat Dipercaya",
+          "p3": "Fokuslah pada pola makan seimbang yang kaya sayur, buah, protein, dan biji-bijian utuh. Tidak ada satu makanan pun yang secara tunggal menentukan kesehatan Anda.",
+          "p4": "Konsultasikan kebutuhan gizi spesifik Anda, terutama bila memiliki kondisi medis tertentu, agar rekomendasi lebih tepat sasaran."
+        },
+        "cegah-demam-berdarah": {
+          "p1": "Demam berdarah dengue (DBD) ditularkan melalui gigitan nyamuk Aedes aegypti yang berkembang biak di genangan air bersih. Pencegahan paling efektif dimulai dari lingkungan rumah.",
+          "h1": "3M Plus: Langkah Inti Pencegahan",
+          "p2": "Lakukan Menguras tempat penampungan air, Menutup rapat penampungan, dan Mendaur ulang barang bekas yang dapat menampung air. Tambahkan langkah plus seperti memakai losion anti nyamuk dan memelihara ikan pemakan jentik.",
+          "h2": "Kapan Harus Waspada",
+          "p3": "Waspadai demam tinggi mendadak, nyeri otot, ruam, dan penurunan trombosit. Segera periksakan diri bila muncul tanda-tanda tersebut, terutama pada anak.",
+          "p4": "Deteksi dini dan penanganan tepat sangat menurunkan risiko komplikasi. Jangan tunda konsultasi bila gejala memburuk."
+        }
+      }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Testimoni",
+    "title": "Kata Pasien",
+    "subtitle": "Pengalaman pasien yang telah menerima pelayanan.",
+    "list": {
+      "t1": {
+        "quote": "Dokternya sangat teliti dan menjelaskan dengan sabar. Saya jadi jauh lebih paham kondisi kesehatan saya.",
+        "name": "R. D."
+      },
+      "t2": {
+        "quote": "Pelayanannya ramah dan profesional. Anak saya yang biasanya takut ke dokter jadi lebih tenang.",
+        "name": "A. S."
+      },
+      "t3": {
+        "quote": "Konsultasinya jelas dan tidak terburu-buru. Sangat direkomendasikan untuk keluarga.",
+        "name": "M. A."
+      },
+      "t4": {
+        "quote": "Bisa konsultasi online saat mobilitas tinggi. Sangat membantu dan tetap terasa personal.",
+        "name": "N. W."
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Pertanyaan yang Sering Diajukan",
+    "subtitle": "Belum menemukan jawaban? Silakan hubungi kami.",
+    "list": {
+      "q1": {
+        "q": "Apakah perlu membuat janji sebelum datang?",
+        "a": "Untuk kenyamanan dan menghindari antrean panjang, kami sangat menyarankan membuat janji terlebih dahulu melalui formulir atau WhatsApp."
+      },
+      "q2": {
+        "q": "Bagaimana cara membuat janji temu?",
+        "a": "Anda dapat mengisi formulir janji temu di website ini atau menghubungi langsung melalui WhatsApp. Tim kami akan mengonfirmasi jadwal Anda."
+      },
+      "q3": {
+        "q": "Apakah menerima asuransi tertentu?",
+        "a": "Silakan hubungi kami terlebih dahulu untuk informasi terkini mengenai kerja sama asuransi yang tersedia."
+      },
+      "q4": {
+        "q": "Apakah menyediakan konsultasi online?",
+        "a": "Ya, tersedia layanan konsultasi online melalui telemedicine. Detail teknis akan diinformasikan saat konfirmasi jadwal."
+      },
+      "q5": {
+        "q": "Berapa estimasi biaya konsultasi?",
+        "a": "Biaya konsultasi bervariasi tergantung jenis layanan dan lokasi praktik. Informasi rinci akan disampaikan saat konfirmasi."
+      },
+      "q6": {
+        "q": "Apakah bisa konsultasi dalam Bahasa Inggris?",
+        "a": "Ya, konsultasi dapat dilakukan dalam Bahasa Indonesia maupun Bahasa Inggris."
+      },
+      "q7": {
+        "q": "Bagaimana prosedur untuk surat keterangan sehat?",
+        "a": "Surat keterangan sehat diterbitkan setelah pemeriksaan fisik singkat. Silakan informasikan kebutuhan Anda saat membuat janji."
+      },
+      "q8": {
+        "q": "Apakah menerima pasien anak?",
+        "a": "Sebagai dokter umum, kami menerima pasien dari berbagai usia, termasuk anak-anak, untuk keluhan kesehatan umum."
+      }
+    }
+  },
+  "booking": {
+    "eyebrow": "Janji Temu",
+    "title": "Buat Janji Temu",
+    "subtitle": "Isi formulir di bawah ini, pesan akan diteruskan ke WhatsApp dokter.",
+    "name": "Nama Lengkap",
+    "namePlaceholder": "Masukkan nama lengkap Anda",
+    "phone": "Nomor WhatsApp",
+    "phonePlaceholder": "Contoh: 08123456789",
+    "date": "Tanggal Diinginkan",
+    "time": "Jam",
+    "timePlaceholder": "Contoh: 09:00",
+    "service": "Jenis Layanan",
+    "servicePlaceholder": "Pilih layanan",
+    "notes": "Keluhan / Catatan (opsional)",
+    "notesPlaceholder": "Ceritakan keluhan atau kebutuhan Anda",
+    "submit": "Kirim via WhatsApp",
+    "required": "Wajib diisi",
+    "invalidPhone": "Nomor tidak valid",
+    "success": "Terima kasih! Anda akan diarahkan ke WhatsApp."
+  },
+  "contact": {
+    "eyebrow": "Kontak",
+    "title": "Hubungi Kami",
+    "subtitle": "Ada pertanyaan? Kirim pesan dan kami akan segera menghubungi Anda.",
+    "formName": "Nama",
+    "formEmail": "Email",
+    "formPhone": "No. HP",
+    "formSubject": "Subjek",
+    "formMessage": "Pesan",
+    "formSubmit": "Kirim Pesan",
+    "address": "Alamat",
+    "phone": "Telepon",
+    "email": "Email",
+    "hours": "Jam Operasional",
+    "followUs": "Ikuti Kami"
+  },
+  "footer": {
+    "navigation": "Navigasi",
+    "contact": "Kontak",
+    "social": "Media Sosial",
+    "disclaimer": "Informasi di website ini bersifat umum dan tidak menggantikan konsultasi medis profesional. Selalu konsultasikan kondisi kesehatan Anda langsung dengan dokter.",
+    "rights": "Seluruh hak cipta dilindungi."
+  },
+  "notFound": {
+    "title": "Halaman Tidak Ditemukan",
+    "subtitle": "Maaf, halaman yang Anda cari tidak tersedia.",
+    "backHome": "Kembali ke Beranda"
+  }
+}
