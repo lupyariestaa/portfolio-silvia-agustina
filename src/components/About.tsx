@@ -72,7 +72,7 @@ export default function About() {
                 />
                 {/* Floating Doctor Identity Badge */}
                 <div className="absolute inset-x-3 bottom-3 z-10 sm:inset-x-5 sm:bottom-5">
-                  <div className="glass rounded-2xl p-4 sm:p-5">
+                  <div className="liquid-glass rounded-2xl p-4 sm:p-5 border border-white/90 shadow-xl">
                   <p className="break-words text-base font-semibold leading-snug text-foreground sm:text-lg">
                     {site.name}, S.Ked
                   </p>

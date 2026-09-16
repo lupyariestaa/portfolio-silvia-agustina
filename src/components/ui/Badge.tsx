@@ -3,13 +3,14 @@ import type { ReactNode } from "react";
 type BadgeProps = {
   children: ReactNode;
   className?: string;
-  tone?: "default" | "accent" | "glass";
+  tone?: "default" | "accent" | "glass" | "liquid";
 };
 
 const tones = {
   default: "border border-border bg-surface text-muted",
   accent: "bg-accent-soft text-accent border border-accent/20",
   glass: "glass text-foreground",
+  liquid: "liquid-glass text-accent border border-white/90 font-semibold shadow-sm",
 };
 
 export default function Badge({

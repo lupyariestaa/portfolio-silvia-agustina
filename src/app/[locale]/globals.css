@@ -15,22 +15,39 @@
 
   /* ── Liquid Glass System ── */
   /* Base glass */
-  --glass-bg: rgba(255, 255, 255, 0.72);
-  --glass-border: rgba(255, 255, 255, 0.85);
-  --glass-tint: rgba(236, 253, 245, 0.68);
+  --glass-bg: rgba(255, 255, 255, 0.82);
+  --glass-border: rgba(255, 255, 255, 0.9);
+  --glass-tint: rgba(236, 253, 245, 0.78);
   --glass-shadow: 0 8px 32px -4px rgba(15, 23, 42, 0.08), 0 2px 8px -2px rgba(15, 23, 42, 0.04);
   --glass-blur: blur(20px) saturate(180%);
 
-  /* Liquid glass — deeper, more luminous */
-  --liquid-bg: rgba(255, 255, 255, 0.55);
-  --liquid-tint: rgba(236, 253, 245, 0.45);
-  --liquid-border: rgba(255, 255, 255, 0.7);
-  --liquid-shadow: 0 12px 40px -8px rgba(5, 150, 105, 0.15), 0 4px 12px -4px rgba(15, 23, 42, 0.06);
-  --liquid-blur: blur(28px) saturate(200%) brightness(108%);
+  /* Liquid glass — luminous flowing gradient with blue-cyan & emerald caustics */
+  --liquid-bg: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.88) 0%,
+    rgba(240, 249, 255, 0.78) 42%,
+    rgba(236, 253, 245, 0.84) 75%,
+    rgba(255, 255, 255, 0.9) 100%
+  );
+  --liquid-tint: linear-gradient(
+    135deg,
+    rgba(236, 253, 245, 0.9) 0%,
+    rgba(224, 242, 254, 0.75) 45%,
+    rgba(209, 250, 229, 0.86) 80%,
+    rgba(240, 253, 250, 0.9) 100%
+  );
+  --liquid-border: rgba(255, 255, 255, 0.95);
+  --liquid-shadow:
+    inset 0 1.5px 2px 0 rgba(255, 255, 255, 1),
+    inset 0 -1.5px 2px 0 rgba(2, 132, 199, 0.12),
+    0 16px 40px -8px rgba(5, 150, 105, 0.18),
+    0 4px 16px -2px rgba(14, 165, 233, 0.1);
+  --liquid-blur: blur(28px) saturate(210%) brightness(106%);
 
   /* Lighting glow */
-  --glow-accent: rgba(5, 150, 105, 0.12);
-  --glow-soft: rgba(5, 150, 105, 0.06);
+  --glow-accent: rgba(5, 150, 105, 0.22);
+  --glow-blue: rgba(14, 165, 233, 0.2);
+  --glow-soft: rgba(5, 150, 105, 0.08);
 }
 
 @theme inline {
@@ -149,47 +166,55 @@ body {
   overflow: hidden;
 }
 
-/* Liquid glass top sheen — simulates light hitting liquid surface */
+/* Liquid glass top sheen — dynamic fluid light beam sweep */
 .liquid-glass::before,
 .liquid-glass-tint::before {
   content: "";
   position: absolute;
-  inset: 0;
+  top: -60%;
+  left: -60%;
+  width: 220%;
+  height: 220%;
   background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.35) 0%,
-    rgba(255, 255, 255, 0.05) 40%,
-    transparent 60%
+    115deg,
+    transparent 32%,
+    rgba(255, 255, 255, 0.45) 46%,
+    rgba(255, 255, 255, 0.9) 50%,
+    rgba(224, 242, 254, 0.65) 54%,
+    transparent 68%
   );
+  transform: rotate(22deg) translateY(-140%);
+  animation: liquid-light-sweep 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
 }
 
-/* Liquid glass bottom glow — accent light pooling */
+/* Liquid glass bottom glow — blue-emerald caustic light pooling */
 .liquid-glass::after,
 .liquid-glass-tint::after {
   content: "";
   position: absolute;
-  bottom: -50%;
-  left: 50%;
-  width: 120%;
-  height: 80%;
-  transform: translateX(-50%);
+  bottom: -35%;
+  left: 25%;
+  width: 130%;
+  height: 90%;
   background: radial-gradient(
     ellipse at center,
-    var(--glow-accent) 0%,
-    transparent 70%
+    rgba(14, 165, 233, 0.22) 0%,
+    rgba(5, 150, 105, 0.16) 40%,
+    transparent 72%
   );
+  filter: blur(14px);
   pointer-events: none;
   z-index: 0;
-  animation: liquid-pool 6s ease-in-out infinite;
+  animation: liquid-pool 6s ease-in-out infinite alternate;
 }
 
 /* Ensure content sits above pseudo elements */
 .liquid-glass > *,
 .liquid-glass-tint > * {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Fallbacks */
@@ -345,15 +370,29 @@ body {
   animation: blob 14s ease-in-out infinite;
 }
 
-/* Liquid pool — glow pooling animation */
+/* Liquid pool — glow pooling animation with blue-emerald shift */
 @keyframes liquid-pool {
-  0%, 100% {
-    opacity: 0.6;
-    transform: translateX(-50%) scale(1);
+  0% {
+    transform: scale(0.95) translate(0, 0);
+    opacity: 0.65;
   }
   50% {
+    transform: scale(1.18) translate(-8px, -6px);
     opacity: 1;
-    transform: translateX(-50%) scale(1.1);
+  }
+  100% {
+    transform: scale(1.02) translate(8px, 4px);
+    opacity: 0.75;
+  }
+}
+
+/* Liquid light sweep — specular light wave beam */
+@keyframes liquid-light-sweep {
+  0% {
+    transform: rotate(22deg) translateY(-140%);
+  }
+  28%, 100% {
+    transform: rotate(22deg) translateY(140%);
   }
 }
 

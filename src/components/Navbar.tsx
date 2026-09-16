@@ -59,8 +59,10 @@ export default function Navbar() {
     <>
       <header className="pointer-events-none fixed inset-x-0 top-4 z-50 flex justify-center px-4 md:top-6">
         <nav
-          className={`pointer-events-auto flex w-full max-w-5xl items-center justify-between gap-4 rounded-full px-4 py-2.5 transition-all duration-300 md:px-5 ${
-            scrolled ? "liquid-glass" : "border border-transparent bg-transparent"
+          className={`pointer-events-auto flex w-full max-w-5xl items-center justify-between gap-4 rounded-full px-4 py-2.5 transition-all duration-300 md:px-5 liquid-glass ${
+            scrolled
+              ? "shadow-xl border-white/95 ring-1 ring-accent/10"
+              : "shadow-md border-white/80"
           }`}
         >
           {/* Brand */}

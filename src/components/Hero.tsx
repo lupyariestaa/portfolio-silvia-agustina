@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { CalendarHeart, MapPin, ArrowDown } from "lucide-react";
+import { CalendarHeart, MapPin, ArrowDown, Star } from "lucide-react";
 import { motion } from "framer-motion";
 import Container from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/Button";
@@ -19,10 +19,10 @@ export default function Hero() {
 
   return (
     <section id="top" className="relative overflow-hidden pt-36 pb-20 md:pt-44 md:pb-28">
-      {/* Liquid organic blobs */}
-      <div className="pointer-events-none absolute -right-40 top-10 size-[500px] animate-blob rounded-[42%_58%_60%_40%] bg-accent-soft blur-3xl" />
-      <div className="pointer-events-none absolute -left-32 bottom-0 size-[400px] animate-blob rounded-[55%_45%_38%_62%] bg-accent-soft/60 blur-3xl [animation-delay:5s]" />
-      <div className="pointer-events-none absolute right-1/4 top-1/3 size-[250px] animate-blob rounded-[48%_52%_58%_42%] bg-accent-soft/40 blur-2xl [animation-delay:3s]" />
+      {/* Liquid organic blobs with blue and emerald caustics */}
+      <div className="pointer-events-none absolute -right-40 top-10 size-[520px] animate-blob rounded-[42%_58%_60%_40%] bg-emerald-100/75 blur-3xl" />
+      <div className="pointer-events-none absolute -left-32 bottom-0 size-[440px] animate-blob rounded-[55%_45%_38%_62%] bg-sky-200/55 blur-3xl [animation-delay:5s]" />
+      <div className="pointer-events-none absolute right-1/4 top-1/4 size-[280px] animate-blob rounded-[48%_52%_58%_42%] bg-teal-100/60 blur-2xl [animation-delay:3s]" />
 
       <Container className="relative">
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
@@ -33,7 +33,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease }}
             >
-              <Badge tone="accent" className="animate-glow">
+              <Badge tone="liquid" className="animate-glow">
                 <span className="relative flex size-2">
                   <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-75" />
                   <span className="relative inline-flex size-2 rounded-full bg-accent" />
@@ -115,12 +115,27 @@ export default function Hero() {
               />
             </div>
 
-            {/* Liquid glass badge with counter */}
-            <div className="liquid-glass-tint absolute -bottom-5 -left-5 hidden rounded-2xl px-5 py-4 animate-float sm:block">
-              <p className="text-2xl font-bold text-accent">
+            {/* Liquid glass floating badge - top right: patients */}
+            <div className="liquid-glass absolute -top-4 -right-2 sm:-top-5 sm:-right-5 z-10 rounded-2xl p-3 sm:px-4 sm:py-3 animate-float shadow-xl [animation-delay:2.5s]">
+              <div className="flex items-center gap-2 sm:gap-2.5">
+                <span className="flex size-7 sm:size-8 items-center justify-center rounded-full bg-accent text-white shadow-sm">
+                  <Star className="size-3.5 sm:size-4 fill-white" />
+                </span>
+                <div>
+                  <p className="text-sm sm:text-base font-bold text-foreground">
+                    <Counter value="5.000+" />
+                  </p>
+                  <p className="text-[10px] sm:text-xs text-muted">{t("statsPatients")}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Liquid glass floating badge - bottom left: experience */}
+            <div className="liquid-glass-tint absolute -bottom-4 -left-2 sm:-bottom-5 sm:-left-5 z-10 rounded-2xl p-3 sm:px-5 sm:py-4 animate-float shadow-xl">
+              <p className="text-xl sm:text-2xl font-bold text-accent">
                 <Counter value="8+" />
               </p>
-              <p className="text-xs text-muted">{t("statsExperience")}</p>
+              <p className="text-[10px] sm:text-xs font-medium text-foreground/85">{t("statsExperience")}</p>
             </div>
           </motion.div>
         </div>
