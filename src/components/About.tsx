@@ -71,16 +71,14 @@ export default function About() {
                   className="object-cover"
                 />
                 {/* Floating Doctor Identity Badge */}
-                <div className="absolute inset-x-3 bottom-3 z-10 sm:inset-x-5 sm:bottom-5">
-                  <div className="liquid-glass rounded-2xl p-4 sm:p-5 border border-white/90 shadow-xl">
-                  <p className="break-words text-base font-semibold leading-snug text-foreground sm:text-lg">
-                    {site.name}, S.Ked
-                  </p>
-                  <p className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-medium leading-relaxed text-accent-hover sm:text-sm">
-                    <span>{tHero("role")}</span>
-                    <span aria-hidden="true">·</span>
-                    <span>{t("highlights.fkui")}</span>
-                  </p>
+                <div className="absolute inset-x-3 bottom-3 z-10 sm:inset-x-4 sm:bottom-4">
+                  <div className="liquid-glass rounded-2xl p-3.5 sm:p-4 border border-white/90 shadow-lg">
+                    <p className="text-sm sm:text-base font-bold text-foreground leading-tight">
+                      {site.name}, S.Ked
+                    </p>
+                    <p className="mt-1 text-xs font-medium text-accent leading-relaxed">
+                      {tHero("role")} · {t("highlights.fkui")}
+                    </p>
                   </div>
                 </div>
               </div>

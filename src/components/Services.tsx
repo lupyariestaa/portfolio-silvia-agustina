@@ -60,7 +60,7 @@ export default function Services() {
                     </p>
                     <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent">
                       {t("learnMore")}
-                      <ArrowRight className="size-4" />
+                      <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-1" />
                     </span>
                 </Link>
               </Reveal>

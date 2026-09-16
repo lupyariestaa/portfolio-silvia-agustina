@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { CalendarHeart, MapPin, ArrowDown, Star } from "lucide-react";
+import { CalendarHeart, MapPin, ArrowDown, Star, ShieldCheck } from "lucide-react";
 import { motion } from "framer-motion";
 import Container from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/Button";
@@ -96,46 +96,71 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Right: photo */}
+          {/* Right: photo showcase */}
           <motion.div
-            initial={{ opacity: 0, x: 60, scale: 0.95 }}
+            initial={{ opacity: 0, x: 50, scale: 0.96 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
             transition={{ duration: 0.8, ease, delay: 0.2 }}
-            className="relative mx-auto w-full max-w-sm lg:max-w-md"
+            className="relative mx-auto w-full max-w-[340px] sm:max-w-[400px] lg:max-w-[420px]"
           >
-            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border shadow-xl">
-              <Image
-                src={site.avatar}
-                alt={t("photoAlt")}
-                fill
-                sizes="(max-width: 1024px) 90vw, 420px"
-                className="object-cover"
-                priority
-                placeholder="empty"
-              />
-            </div>
+            {/* Ambient soft glow behind frame */}
+            <div className="absolute -inset-2 sm:-inset-3 rounded-[2.5rem] bg-gradient-to-tr from-accent/20 via-sky-100/40 to-emerald-100/30 blur-2xl -z-10" />
 
-            {/* Liquid glass floating badge - top right: patients */}
-            <div className="liquid-glass absolute -top-4 -right-2 sm:-top-5 sm:-right-5 z-10 rounded-2xl p-3 sm:px-4 sm:py-3 animate-float shadow-xl [animation-delay:2.5s]">
-              <div className="flex items-center gap-2 sm:gap-2.5">
-                <span className="flex size-7 sm:size-8 items-center justify-center rounded-full bg-accent text-white shadow-sm">
-                  <Star className="size-3.5 sm:size-4 fill-white" />
-                </span>
-                <div>
-                  <p className="text-sm sm:text-base font-bold text-foreground">
-                    <Counter value="5.000+" />
-                  </p>
-                  <p className="text-[10px] sm:text-xs text-muted">{t("statsPatients")}</p>
+            {/* Main Framed Card */}
+            <div className="relative rounded-[2.25rem] border border-white/90 bg-white/70 p-2 sm:p-2.5 shadow-2xl backdrop-blur-xl">
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[1.75rem] bg-slate-100">
+                <Image
+                  src={site.avatar}
+                  alt={t("photoAlt")}
+                  fill
+                  sizes="(max-width: 1024px) 90vw, 420px"
+                  className="object-cover"
+                  priority
+                  placeholder="empty"
+                />
+
+                {/* Top-left trust badge */}
+                <div className="absolute top-3 left-3 sm:top-4 sm:left-4 z-10 flex items-center gap-1.5 rounded-full glass px-3 py-1.5 shadow-md border border-white/90">
+                  <ShieldCheck className="size-3.5 text-accent" />
+                  <span className="text-[11px] sm:text-xs font-semibold text-foreground">
+                    SIP Terverifikasi
+                  </span>
+                </div>
+
+                {/* Top-right rating badge */}
+                <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10 flex items-center gap-1.5 rounded-full glass px-3 py-1.5 shadow-md border border-white/90">
+                  <Star className="size-3.5 fill-amber-400 text-amber-400" />
+                  <span className="text-xs font-bold text-foreground">5.0</span>
+                  <span className="text-[10px] text-muted">(500+)</span>
+                </div>
+
+                {/* Bottom integrated glass info dock */}
+                <div className="absolute inset-x-3 bottom-3 sm:inset-x-3.5 sm:bottom-3.5 z-10 rounded-2xl glass p-3.5 sm:p-4 shadow-xl border border-white/95">
+                  <div className="flex items-center justify-between gap-2">
+                    <div className="min-w-0">
+                      <p className="text-sm sm:text-base font-bold text-foreground leading-tight truncate">
+                        {site.name}, S.Ked
+                      </p>
+                      <p className="text-xs font-medium text-accent mt-0.5 truncate">
+                        {t("role")} · FKUI
+                      </p>
+                    </div>
+                    <span className="inline-flex items-center gap-1 rounded-full bg-accent-soft px-2.5 py-1 text-[11px] font-semibold text-accent border border-accent/20 shrink-0">
+                      8+ Thn
+                    </span>
+                  </div>
+
+                  <div className="mt-2.5 flex items-center justify-between border-t border-border/70 pt-2 text-[11px] sm:text-xs text-muted">
+                    <span className="flex items-center gap-1.5 truncate">
+                      <MapPin className="size-3.5 text-accent shrink-0" />
+                      Klinik Sehat Sentosa
+                    </span>
+                    <span className="font-semibold text-foreground shrink-0">
+                      Aktif Praktik
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            {/* Liquid glass floating badge - bottom left: experience */}
-            <div className="liquid-glass-tint absolute -bottom-4 -left-2 sm:-bottom-5 sm:-left-5 z-10 rounded-2xl p-3 sm:px-5 sm:py-4 animate-float shadow-xl">
-              <p className="text-xl sm:text-2xl font-bold text-accent">
-                <Counter value="8+" />
-              </p>
-              <p className="text-[10px] sm:text-xs font-medium text-foreground/85">{t("statsExperience")}</p>
             </div>
           </motion.div>
         </div>

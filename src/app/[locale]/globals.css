@@ -166,48 +166,40 @@ body {
   overflow: hidden;
 }
 
-/* Liquid glass top sheen — dynamic fluid light beam sweep */
+/* Liquid glass top sheen — static subtle gloss */
 .liquid-glass::before,
 .liquid-glass-tint::before {
   content: "";
   position: absolute;
-  top: -60%;
-  left: -60%;
-  width: 220%;
-  height: 220%;
+  inset: 0;
   background: linear-gradient(
-    115deg,
-    transparent 32%,
-    rgba(255, 255, 255, 0.45) 46%,
-    rgba(255, 255, 255, 0.9) 50%,
-    rgba(224, 242, 254, 0.65) 54%,
-    transparent 68%
+    135deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.08) 35%,
+    transparent 65%
   );
-  transform: rotate(22deg) translateY(-140%);
-  animation: liquid-light-sweep 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   pointer-events: none;
   z-index: 1;
 }
 
-/* Liquid glass bottom glow — blue-emerald caustic light pooling */
+/* Liquid glass bottom glow — static ambient soft tint */
 .liquid-glass::after,
 .liquid-glass-tint::after {
   content: "";
   position: absolute;
-  bottom: -35%;
-  left: 25%;
-  width: 130%;
-  height: 90%;
+  bottom: -30%;
+  left: 20%;
+  width: 120%;
+  height: 80%;
   background: radial-gradient(
     ellipse at center,
-    rgba(14, 165, 233, 0.22) 0%,
-    rgba(5, 150, 105, 0.16) 40%,
-    transparent 72%
+    rgba(14, 165, 233, 0.1) 0%,
+    rgba(5, 150, 105, 0.08) 40%,
+    transparent 70%
   );
-  filter: blur(14px);
+  filter: blur(16px);
   pointer-events: none;
   z-index: 0;
-  animation: liquid-pool 6s ease-in-out infinite alternate;
 }
 
 /* Ensure content sits above pseudo elements */
@@ -370,32 +362,6 @@ body {
   animation: blob 14s ease-in-out infinite;
 }
 
-/* Liquid pool — glow pooling animation with blue-emerald shift */
-@keyframes liquid-pool {
-  0% {
-    transform: scale(0.95) translate(0, 0);
-    opacity: 0.65;
-  }
-  50% {
-    transform: scale(1.18) translate(-8px, -6px);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.02) translate(8px, 4px);
-    opacity: 0.75;
-  }
-}
-
-/* Liquid light sweep — specular light wave beam */
-@keyframes liquid-light-sweep {
-  0% {
-    transform: rotate(22deg) translateY(-140%);
-  }
-  28%, 100% {
-    transform: rotate(22deg) translateY(140%);
-  }
-}
-
 /* Liquid rotate — conic gradient border flow */
 @keyframes liquid-rotate {
   to {
@@ -480,8 +446,6 @@ body {
   .animate-gradient,
   .skeleton,
   .animate-glow,
-  .liquid-glass::after,
-  .liquid-glass-tint::after,
   .liquid-border::after {
     animation: none !important;
   }
