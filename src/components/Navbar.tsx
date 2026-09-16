@@ -4,21 +4,24 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X, CalendarHeart } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { site } from "@/lib/content";
 
 const navItems = [
-  { key: "about", href: "#about" },
-  { key: "services", href: "#services" },
-  { key: "schedule", href: "#schedule" },
-  { key: "blog", href: "#blog" },
-  { key: "contact", href: "#contact" },
+  { key: "about", href: "/#about" },
+  { key: "services", href: "/#services" },
+  { key: "schedule", href: "/#schedule" },
+  { key: "blog", href: "/#blog" },
+  { key: "contact", href: "/#contact" },
 ] as const;
 
 export default function Navbar() {
   const t = useTranslations("nav");
   const tCommon = useTranslations("common");
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -35,6 +38,22 @@ export default function Navbar() {
       document.body.style.overflow = "";
     };
   }, [open]);
+
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    setOpen(false);
+    if (isHome && href.startsWith("/#")) {
+      e.preventDefault();
+      const id = href.replace("/#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        window.history.pushState(null, "", `#${id}`);
+      }
+    }
+  };
 
   return (
     <>
@@ -62,12 +81,13 @@ export default function Navbar() {
           <ul className="hidden items-center gap-1 lg:flex">
             {navItems.map((item) => (
               <li key={item.key}>
-                <a
+                <Link
                   href={item.href}
+                  onClick={(e) => handleNavClick(e, item.href)}
                   className="rounded-full px-3.5 py-2 text-sm text-muted transition-colors hover:bg-accent-soft hover:text-accent"
                 >
                   {t(item.key)}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -75,13 +95,14 @@ export default function Navbar() {
           {/* Right side */}
           <div className="flex items-center gap-2">
             <LanguageSwitcher className="hidden sm:inline-flex" />
-            <a
-              href="#booking"
+            <Link
+              href="/#booking"
+              onClick={(e) => handleNavClick(e, "/#booking")}
               className="hidden items-center gap-1.5 rounded-full bg-accent px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-accent-hover md:inline-flex"
             >
               <CalendarHeart className="size-4" />
               {tCommon("bookAppointment")}
-            </a>
+            </Link>
 
             {/* Mobile toggle */}
             <button
@@ -110,27 +131,27 @@ export default function Navbar() {
             <ul className="flex flex-col gap-1">
               {navItems.map((item) => (
                 <li key={item.key}>
-                  <a
+                  <Link
                     href={item.href}
-                    onClick={() => setOpen(false)}
+                    onClick={(e) => handleNavClick(e, item.href)}
                     className="block border-b border-border py-4 text-2xl font-semibold tracking-tight transition-colors hover:text-accent"
                   >
                     {t(item.key)}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
 
             <div className="mt-8 flex flex-col gap-4">
               <LanguageSwitcher className="self-start" />
-              <a
-                href="#booking"
-                onClick={() => setOpen(false)}
+              <Link
+                href="/#booking"
+                onClick={(e) => handleNavClick(e, "/#booking")}
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 text-base font-medium text-white"
               >
                 <CalendarHeart className="size-5" />
                 {tCommon("bookAppointment")}
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}

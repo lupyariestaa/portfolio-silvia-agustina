@@ -11,10 +11,12 @@ import Testimonials from "@/components/Testimonials";
 import Faq from "@/components/Faq";
 import Booking from "@/components/Booking";
 import Contact from "@/components/Contact";
+import HashScrollHandler from "@/components/HashScrollHandler";
 
 export default function HomePage() {
   return (
     <>
+      <HashScrollHandler />
       <Hero />
       <TrustBar />
       <About />

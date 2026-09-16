@@ -6,11 +6,11 @@ import Container from "./ui/Container";
 import { site } from "@/lib/content";
 
 const navItems = [
-  { key: "about", href: "#about" },
-  { key: "services", href: "#services" },
-  { key: "schedule", href: "#schedule" },
-  { key: "blog", href: "#blog" },
-  { key: "contact", href: "#contact" },
+  { key: "about", href: "/#about" },
+  { key: "services", href: "/#services" },
+  { key: "schedule", href: "/#schedule" },
+  { key: "blog", href: "/#blog" },
+  { key: "contact", href: "/#contact" },
 ] as const;
 
 const socialIcons: Record<string, ComponentType<{ className?: string }>> = {
