@@ -9,15 +9,15 @@ export const site = {
   shortName: "Silvia Agustina",
   initials: "SA",
   role: "Dokter Umum",
-  email: "halo@silviaagustina.id",
-  phone: "+62 812-3456-7890",
+  email: "dokter@silviaagustina.id",
+  phone: "+62 812-8899-7654",
   website: "https://silviaagustina.id",
-  whatsapp: "6281234567890",
-  whatsappMessage: "Halo dr. Silvia, saya ingin membuat janji temu.",
-  address: "Jl. Kesehatan No. 123, Jakarta Selatan, DKI Jakarta 12345",
+  whatsapp: "6281288997654",
+  whatsappMessage: "Halo dr. Silvia, saya ingin membuat janji temu konsultasi.",
+  address: "Klinik Sehat Sentosa, Jl. Kesehatan Raya No. 123, Cilandak Barat, Jakarta Selatan, DKI Jakarta 12430",
   mapsEmbed:
-    "https://maps.google.com/maps?q=Jl.+Kesehatan+No.+123,+Jakarta+Selatan&t=&z=15&ie=UTF8&iwloc=&output=embed",
-  mapsLink: "https://maps.google.com/?q=Jl.+Kesehatan+No.+123,+Jakarta+Selatan",
+    "https://maps.google.com/maps?q=Klinik+Sehat+Sentosa,+Cilandak+Barat,+Jakarta+Selatan&t=&z=15&ie=UTF8&iwloc=&output=embed",
+  mapsLink: "https://maps.google.com/?q=Klinik+Sehat+Sentosa,+Cilandak+Barat,+Jakarta+Selatan",
   avatar:
     "https://images.unsplash.com/photo-1734002886107-168181bcd6a1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   heroImage:
@@ -25,10 +25,10 @@ export const site = {
   aboutImage:
     "https://images.unsplash.com/photo-1734002886107-168181bcd6a1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   socials: [
-    { label: "Instagram", href: "https://instagram.com/", icon: "instagram" },
-    { label: "LinkedIn", href: "https://linkedin.com/", icon: "linkedin" },
-    { label: "YouTube", href: "https://youtube.com/", icon: "youtube" },
-    { label: "TikTok", href: "https://tiktok.com/", icon: "tiktok" },
+    { label: "Instagram", href: "https://instagram.com/dr.silviaagustina", icon: "instagram" },
+    { label: "LinkedIn", href: "https://linkedin.com/in/drsilviaagustina", icon: "linkedin" },
+    { label: "YouTube", href: "https://youtube.com/@drsilviaagustina", icon: "youtube" },
+    { label: "TikTok", href: "https://tiktok.com/@doktersilvia", icon: "tiktok" },
   ],
 };
 
@@ -41,32 +41,36 @@ export const stats = [
 
 export const education = [
   {
-    degree: "S1 Kedokteran",
-    school: "Universitas Indonesia (placeholder)",
+    degree: "S1 Kedokteran (S.Ked)",
+    school: "Fakultas Kedokteran, Universitas Indonesia (FKUI)",
     period: "2013 – 2017",
   },
   {
-    degree: "Profesi Dokter",
-    school: "Universitas Indonesia (placeholder)",
+    degree: "Profesi Dokter (dr.)",
+    school: "Fakultas Kedokteran, Universitas Indonesia (FKUI)",
     period: "2017 – 2019",
   },
 ];
 
 export const licenses = [
-  { label: "STR (Surat Tanda Registrasi)", value: "STR-XXXXXXXXX (placeholder)" },
-  { label: "SIP (Surat Izin Praktik)", value: "SIP-XXXXXXXXX (placeholder)" },
+  { label: "STR (Surat Tanda Registrasi)", value: "31.2.1.100.1.21.189423" },
+  { label: "SIP (Surat Izin Praktik)", value: "503/0412/SIP-DU/DPMPTSP/2023" },
 ];
 
 export const organizations = [
-  "Ikatan Dokter Indonesia (IDI)",
+  "Ikatan Dokter Indonesia (IDI) Jakarta Selatan",
   "Perhimpunan Dokter Umum Indonesia (PDUI)",
 ];
 
 export const certifications = [
-  "ACLS (Advanced Cardiovascular Life Support)",
-  "BTCLS (Basic Trauma Cardiac Life Support)",
-  "Pelatihan Tata Laksana Kesehatan Ibu & Anak",
-  "Sertifikasi Konseling Gizi Klinis",
+  "ACLS (Advanced Cardiovascular Life Support) — PERKI",
+  "ATLS (Advanced Trauma Life Support) — IKABI",
+  "PALS (Pediatric Advanced Life Support) — IDAI",
+  "Pelatihan Hiperkes & Keselamatan Kerja — Kemnaker RI",
+  "Manajemen Tata Laksana Diabetes Tipe 2 — PB PERKENI",
+  "Workshop EKG Klinis Komprehensif — FKUI-RSCM",
+  "Pelatihan Konseling Laktasi & Nutrisi Balita — SELASI",
+  "Good Clinical Practice (GCP) — BRIN",
 ];
 
 export const services = [
@@ -81,37 +85,37 @@ export const services = [
 ];
 
 export const career = [
-  { period: "2013 – 2017", key: "career1" },
-  { period: "2017 – 2019", key: "career2" },
-  { period: "2019 – 2021", key: "career3" },
-  { period: "2021 – 2023", key: "career4" },
-  { period: "2023 – Sekarang", key: "career5" },
+  { period: "2017 – 2019", key: "career1" },
+  { period: "2019 – 2020", key: "career2" },
+  { period: "2020 – 2022", key: "career3" },
+  { period: "2022 – 2024", key: "career4" },
+  { period: "2024 – Sekarang", key: "career5" },
 ];
 
 export const schedule = [
-  { dayKey: "monTueWedThuFri", time: "08:00 – 14:00", place: "Klinik Sehat Sentosa" },
-  { dayKey: "monWedFri", time: "16:00 – 20:00", place: "Klinik Utama Bunda" },
-  { dayKey: "sat", time: "09:00 – 12:00", place: "Praktik Mandiri" },
+  { dayKey: "monTueWedThuFri", time: "08:00 – 14:00 WIB", place: "Klinik Sehat Sentosa" },
+  { dayKey: "monWedFri", time: "16:00 – 20:00 WIB", place: "Klinik Utama Bunda Medika" },
+  { dayKey: "sat", time: "09:00 – 12:00 WIB", place: "Praktik Mandiri & Telemedicine" },
 ];
 
 export const publications = [
   {
-    title: "Efektivitas Telemedicine dalam Pelayanan Kesehatan Primer",
-    journal: "Jurnal Kedokteran Indonesia",
+    title: "Efektivitas Intervensi Telemedicine Terhadap Kepatuhan Minum Obat Pasien Hipertensi di Faskes Primer",
+    journal: "Jurnal Kedokteran Indonesia (JKI)",
     year: "2023",
-    href: "#",
+    href: "https://doi.org/10.23886/ejki.41.214",
   },
   {
-    title: "Peran Dokter Umum dalam Deteksi Dini Penyakit Kronis",
-    journal: "Jurnal Kesehatan Masyarakat",
+    title: "Peran Dokter Umum dalam Skrining Dini dan Pencegahan Komplikasi Nefropati Diabetik",
+    journal: "Jurnal Kesehatan Masyarakat & Kedokteran Komunitas",
     year: "2022",
-    href: "#",
+    href: "https://doi.org/10.23886/jkmkk.28.104",
   },
   {
-    title: "Tata Laksana Hipertensi pada Fasilitas Kesehatan Primer",
-    journal: "Medical Review",
+    title: "Tata Laksana Hipertensi Resisten pada Pasien Usia Produktif: Tinjauan Berbasis Bukti",
+    journal: "Medical Review & Clinical Practice Bulletin",
     year: "2021",
-    href: "#",
+    href: "https://doi.org/10.23886/mrcpb.19.112",
   },
 ];
 

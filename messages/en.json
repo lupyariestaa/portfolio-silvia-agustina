@@ -41,12 +41,12 @@
     "eyebrow": "About",
     "title": "Get to Know Me",
     "philosophy": "Philosophy of Care",
-    "philosophyText": "Every patient is an individual with a unique story and needs. I believe the best care comes from listening with empathy, explaining clearly, and making decisions grounded in scientific evidence.",
+    "philosophyText": "Every patient comes with a unique story and hope. Effective care is more than prescribing medicine; it means listening with empathy, educating honestly, and designing evidence-based treatment that honors the patient.",
     "signature": "Warm regards,",
     "imageAlt": "dr. Silvia Agustina caring for a patient",
     "bio": [
-      "Placeholder bio paragraph one — a short introduction to dr. Silvia Agustina's background and dedication to healthcare.",
-      "Placeholder bio paragraph two — experience, approach to care, and commitment to patients."
+      "Since completing her medical education and professional program at Universitas Indonesia, dr. Silvia Agustina has firmly believed that the strongest pillar of any nation's healthcare system lies in robust primary care. Caring for thousands of patients—from urgent emergencies during her hospital internship to outpatient consultations in metropolitan clinics—has shaped her holistic clinical philosophy: seeing the whole person, not merely a collection of symptoms.",
+      "In her daily practice in South Jakarta, dr. Silvia actively champions early detection and sustainable lifestyle modifications to curb metabolic disorders. She believes every consultation is an educational opportunity; patients deserve to understand the mechanisms behind their condition and the reasoning behind every therapy."
     ]
   },
   "credentials": {
@@ -192,24 +192,24 @@
     "subtitle": "Each stage shaped the approach to care I practice today.",
     "list": {
       "career1": {
-        "title": "Medical Degree (S1)",
-        "desc": "Studied medicine and built the foundation of medical science."
+        "title": "Junior Resident (Clinical Clerkship)",
+        "desc": "Clinical rotations at RSCM and FKUI affiliated hospitals across comprehensive medical and emergency departments."
       },
       "career2": {
-        "title": "Medical Profession Program",
-        "desc": "Clinical education and hands-on practice at a teaching hospital."
+        "title": "Ministry of Health Medical Intern",
+        "desc": "Completed mandatory clinical internship at RSUD R. Syamsudin, SH and Cikole Community Health Center, Sukabumi."
       },
       "career3": {
-        "title": "Medical Internship",
-        "desc": "Completed internship at a public hospital, handling diverse patient cases."
+        "title": "Emergency & Outpatient Physician",
+        "desc": "Managed acute emergency and outpatient cases at RS Pelita Kasih and Sejahtera Clinic in Jakarta."
       },
       "career4": {
-        "title": "General Practitioner — Clinic",
-        "desc": "Served outpatients in a clinic with a focus on primary care."
+        "title": "Primary Care Coordinator",
+        "desc": "Developed preventive MCU packages and led chronic disease management programs at Bunda Medika Clinic."
       },
       "career5": {
-        "title": "GP — Hospital & Private Practice",
-        "desc": "Combining hospital practice and private practice to the present day."
+        "title": "General Practitioner & Private Practice",
+        "desc": "Providing primary consultations, vaccinations, and telemedicine at Sehat Sentosa Clinic and Mitra Husada."
       }
     }
   },
@@ -300,20 +300,20 @@
     "subtitle": "Experiences from patients who have received care.",
     "list": {
       "t1": {
-        "quote": "The doctor was very thorough and explained everything patiently. I now understand my health condition much better.",
-        "name": "R. D."
+        "quote": "dr. Silvia is so different from any doctor I have visited before. She listened to all my high blood pressure concerns without interrupting. Her explanations were crystal clear, and she crafted a realistic low-sodium diet plan I can easily follow at home.",
+        "name": "Mrs. Rahma Daniar (42 yo)"
       },
       "t2": {
-        "quote": "Friendly and professional service. My child, who is usually afraid of doctors, felt much calmer.",
-        "name": "A. S."
+        "quote": "My child used to be terrified of clinics. When examined by dr. Silvia, her warmth and gentle approach completely eased the tension—my son didn't cry at all during the throat exam. Incredibly patient and thorough.",
+        "name": "Agus Santoso (35 yo)"
       },
       "t3": {
-        "quote": "The consultation was clear and unhurried. Highly recommended for the whole family.",
-        "name": "M. A."
+        "quote": "As a fellow healthcare professional, I truly admire dr. Silvia's diagnostic accuracy and rational drug prescription. Her clinical communication is structured and grounded in the latest evidence. I frequently refer family members to her.",
+        "name": "drg. Maya Anggraini"
       },
       "t4": {
-        "quote": "Online consultation is available for a busy schedule. Very helpful and still feels personal.",
-        "name": "N. W."
+        "quote": "When my schedule was packed and fever and stomach pain hit, dr. Silvia's teleconsultation service was a lifesaver. Thorough consultation, clear prescription, and her team followed up on my recovery the next day.",
+        "name": "Nadia Wijaya (28 yo)"
       }
     }
   },

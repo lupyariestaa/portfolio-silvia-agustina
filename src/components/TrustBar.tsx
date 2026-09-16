@@ -6,10 +6,10 @@ import { organizations } from "@/lib/content";
 
 const trustItems = [
   "Ikatan Dokter Indonesia (IDI)",
-  "Kemenkes RI",
-  "RSUD Sehat Sentosa",
-  "Klinik Utama Bunda",
-  "PDUI",
+  "PDUI Cabang Jakarta",
+  "Klinik Sehat Sentosa",
+  "RS Mitra Husada",
+  "Klinik Bunda Medika",
 ];
 
 export default function TrustBar() {

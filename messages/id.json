@@ -41,12 +41,12 @@
     "eyebrow": "Tentang",
     "title": "Mengenal Lebih Dekat",
     "philosophy": "Filosofi Pelayanan",
-    "philosophyText": "Setiap pasien adalah individu dengan cerita dan kebutuhan unik. Saya percaya pelayanan terbaik lahir dari mendengarkan dengan empati, menjelaskan dengan jelas, dan mengambil keputusan berbasis bukti ilmiah.",
+    "philosophyText": "Setiap pasien yang datang membawa cerita dan harapan. Pengobatan efektif bukan sekadar meresepkan obat, melainkan mendengarkan dengan empati, mengedukasi dengan jujur, dan merancang perawatan berbasis bukti ilmiah terkini.",
     "signature": "Salam hangat,",
     "imageAlt": "dr. Silvia Agustina sedang melayani pasien",
     "bio": [
-      "Bio placeholder paragraf pertama — deskripsi singkat tentang latar belakang dan dedikasi dr. Silvia Agustina dalam dunia kesehatan.",
-      "Bio placeholder paragraf kedua — pengalaman, pendekatan pelayanan, dan komitmen terhadap pasien."
+      "Sejak menyelesaikan pendidikan kedokteran dan program profesi di Universitas Indonesia, dr. Silvia Agustina meyakini bahwa pilar terkuat dari sistem kesehatan sebuah bangsa berada pada pelayanan primer yang tangguh. Pengalaman menangani ribuan kasus medis—mulai dari kegawatdaruratan saat masa internship di RSUD daerah hingga konsultasi rawat jalan di klinik metropolitan—membentuk pendekatan klinis yang menyeluruh: melihat pasien sebagai manusia seutuhnya, bukan sekadar kumpulan gejala klinis.",
+      "Dalam praktiknya sehari-hari di Jakarta Selatan, dr. Silvia aktif mengadvokasi pentingnya deteksi dini dan modifikasi gaya hidup untuk menekan prevalensi sindrom metabolik. Beliau percaya bahwa waktu konsultasi adalah momen edukasi; pasien berhak memahami mekanisme di balik penyakit mereka dan alasan di balik setiap terapi yang diberikan."
     ]
   },
   "credentials": {
@@ -192,24 +192,24 @@
     "subtitle": "Setiap tahap membentuk pendekatan pelayanan yang saya jalani hari ini.",
     "list": {
       "career1": {
-        "title": "S1 Kedokteran",
-        "desc": "Menempuh pendidikan kedokteran dan membangun dasar ilmu medis."
+        "title": "Dokter Muda (Koasistensi)",
+        "desc": "Rotasi klinik di RSCM dan rumah sakit jejaring FKUI di berbagai departemen medis dan gawat darurat."
       },
       "career2": {
-        "title": "Program Profesi Dokter",
-        "desc": "Pendidikan klinik dan praktik langsung di rumah sakit pendidikan."
+        "title": "Dokter Internship Kemenkes RI",
+        "desc": "Menjalani program internship wajib di RSUD R. Syamsudin, SH dan Puskesmas Cikole Sukabumi."
       },
       "career3": {
-        "title": "Dokter Internship",
-        "desc": "Menjalani internship di RSUD, menangani beragam kasus pasien."
+        "title": "Dokter IGD & Rawat Jalan",
+        "desc": "Menangani pasien rawat jalan dan kegawatdaruratan di RS Pelita Kasih dan Klinik Sejahtera Jakarta."
       },
       "career4": {
-        "title": "Dokter Umum — Klinik",
-        "desc": "Melayani pasien rawat jalan di klinik dengan fokus pelayanan primer."
+        "title": "Koordinator Layanan Primer",
+        "desc": "Mengembangkan paket MCU preventif dan memimpin program pemantauan penyakit kronis di Klinik Bunda Medika."
       },
       "career5": {
-        "title": "Dokter Umum — RS & Praktik Mandiri",
-        "desc": "Menggabungkan praktik di rumah sakit dan praktik mandiri hingga kini."
+        "title": "Dokter Umum & Praktik Mandiri",
+        "desc": "Melayani konsultasi primer, imunisasi, dan telemedicine di Klinik Sehat Sentosa dan Mitra Husada."
       }
     }
   },
@@ -300,20 +300,20 @@
     "subtitle": "Pengalaman pasien yang telah menerima pelayanan.",
     "list": {
       "t1": {
-        "quote": "Dokternya sangat teliti dan menjelaskan dengan sabar. Saya jadi jauh lebih paham kondisi kesehatan saya.",
-        "name": "R. D."
+        "quote": "dr. Silvia sangat berbeda dengan dokter yang pernah saya temui. Beliau mendengarkan semua keluhan tensi tinggi saya tanpa memotong pembicaraan. Penjelasannya gamblang dan beliau membuatkan panduan pola makan rendah garam yang sangat realistis untuk dijalani.",
+        "name": "Ibu Rahma Daniar (42 th)"
       },
       "t2": {
-        "quote": "Pelayanannya ramah dan profesional. Anak saya yang biasanya takut ke dokter jadi lebih tenang.",
-        "name": "A. S."
+        "quote": "Awalnya anak saya takut sekali kalau diajak ke klinik. Waktu diperiksa dr. Silvia, dokternya sangat ramah dan bisa mencairkan suasana sampai anak saya tidak menangis sama sekali saat diperiksa tenggorokannya. Sangat sabar dan teliti.",
+        "name": "Agus Santoso (35 th)"
       },
       "t3": {
-        "quote": "Konsultasinya jelas dan tidak terburu-buru. Sangat direkomendasikan untuk keluarga.",
-        "name": "M. A."
+        "quote": "Sebagai sesama tenaga medis, saya sangat mengapresiasi ketepatan diagnosis dan pertimbangan rasional obat yang dipilih dr. Silvia. Komunikasi klinisnya terstruktur dan berbasis sains terkini. Saya sering merekomendasikan pasien keluarga ke beliau.",
+        "name": "drg. Maya Anggraini"
       },
       "t4": {
-        "quote": "Bisa konsultasi online saat mobilitas tinggi. Sangat membantu dan tetap terasa personal.",
-        "name": "N. W."
+        "quote": "Waktu jadwal saya padat dan mulai merasa demam serta nyeri lambung, layanan telekonsultasi dr. Silvia sangat menyelamatkan. Sesi konsultasi detail, resep dikirim jelas, dan keesokan harinya tim beliau mem-follow up kondisi saya.",
+        "name": "Nadia Wijaya (28 th)"
       }
     }
   },
