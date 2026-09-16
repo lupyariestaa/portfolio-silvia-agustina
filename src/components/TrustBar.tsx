@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { ShieldCheck, Building2, HeartPulse, Award, Users } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Reveal from "@/components/ui/Reveal";
+import SpotlightCard from "@/components/ui/SpotlightCard";
 import { organizations } from "@/lib/content";
 
 const trustItems = [
@@ -31,16 +32,15 @@ export default function TrustBar() {
         <Reveal delay={0.1}>
           <ul className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-5">
             {trustItems.map((item) => (
-              <li
-                key={item.label}
-                className="flex flex-col items-center gap-2.5 rounded-xl border border-border bg-background px-3 py-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-sm"
-              >
-                <span className="flex size-10 items-center justify-center rounded-full bg-accent-soft text-accent">
-                  <item.icon className="size-5" />
-                </span>
-                <span className="text-xs font-medium text-muted sm:text-sm">
-                  {item.label}
-                </span>
+              <li key={item.label}>
+                <SpotlightCard className="flex h-full flex-col items-center gap-2.5 rounded-xl border border-border bg-background px-3 py-5 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-sm">
+                  <span className="flex size-10 items-center justify-center rounded-full bg-accent-soft text-accent">
+                    <item.icon className="size-5" />
+                  </span>
+                  <span className="text-xs font-medium text-muted sm:text-sm">
+                    {item.label}
+                  </span>
+                </SpotlightCard>
               </li>
             ))}
           </ul>

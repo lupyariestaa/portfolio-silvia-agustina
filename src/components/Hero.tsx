@@ -19,9 +19,10 @@ export default function Hero() {
 
   return (
     <section id="top" className="relative overflow-hidden pt-36 pb-20 md:pt-44 md:pb-28">
-      {/* Animated gradient blobs */}
-      <div className="pointer-events-none absolute -right-40 top-20 size-[480px] animate-blob rounded-full bg-accent-soft blur-3xl" />
-      <div className="pointer-events-none absolute -left-32 bottom-0 size-[380px] animate-blob rounded-full bg-accent-soft/70 blur-3xl [animation-delay:4s]" />
+      {/* Liquid organic blobs */}
+      <div className="pointer-events-none absolute -right-40 top-10 size-[500px] animate-blob rounded-[42%_58%_60%_40%] bg-accent-soft blur-3xl" />
+      <div className="pointer-events-none absolute -left-32 bottom-0 size-[400px] animate-blob rounded-[55%_45%_38%_62%] bg-accent-soft/60 blur-3xl [animation-delay:5s]" />
+      <div className="pointer-events-none absolute right-1/4 top-1/3 size-[250px] animate-blob rounded-[48%_52%_58%_42%] bg-accent-soft/40 blur-2xl [animation-delay:3s]" />
 
       <Container className="relative">
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
@@ -32,7 +33,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease }}
             >
-              <Badge tone="accent">
+              <Badge tone="accent" className="animate-glow">
                 <span className="relative flex size-2">
                   <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-75" />
                   <span className="relative inline-flex size-2 rounded-full bg-accent" />
@@ -114,8 +115,8 @@ export default function Hero() {
               />
             </div>
 
-            {/* Floating glass badge with counter */}
-            <div className="glass-tint absolute -bottom-5 -left-5 hidden rounded-2xl px-5 py-4 sm:block">
+            {/* Liquid glass badge with counter */}
+            <div className="liquid-glass-tint absolute -bottom-5 -left-5 hidden rounded-2xl px-5 py-4 animate-float sm:block">
               <p className="text-2xl font-bold text-accent">
                 <Counter value="8+" />
               </p>

@@ -15,7 +15,7 @@ import { Link } from "@/i18n/navigation";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/ui/Reveal";
-import Card from "@/components/ui/Card";
+import SpotlightCard from "@/components/ui/SpotlightCard";
 import { services } from "@/lib/content";
 
 const iconMap: Record<string, LucideIcon> = {
@@ -50,7 +50,7 @@ export default function Services() {
             return (
               <Reveal key={service.slug} delay={i * 0.05}>
                 <Link href={`/layanan/${service.slug}`} className="block h-full">
-                  <Card className="group flex h-full flex-col">
+                  <SpotlightCard className="group flex h-full flex-col rounded-2xl border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                     <span className="flex size-12 items-center justify-center rounded-2xl bg-accent-soft text-accent transition-colors group-hover:bg-accent group-hover:text-white">
                       <Icon className="size-6" />
                     </span>
@@ -64,7 +64,7 @@ export default function Services() {
                       {t("learnMore")}
                       <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                     </span>
-                  </Card>
+                  </SpotlightCard>
                 </Link>
               </Reveal>
             );

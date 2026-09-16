@@ -70,7 +70,7 @@ export default function About() {
                   className="object-cover"
                 />
                 {/* Floating Doctor Identity Badge */}
-                <div className="absolute inset-x-4 bottom-4 glass rounded-2xl p-4 shadow-sm">
+                <div className="absolute inset-x-4 bottom-4 liquid-glass rounded-2xl p-4 shadow-sm">
                   <p className="text-sm font-bold text-foreground">
                     {site.name}, S.Ked
                   </p>
@@ -131,7 +131,7 @@ export default function About() {
 
             {/* Philosophy Quote Card */}
             <Reveal delay={0.2}>
-              <div className="relative rounded-2xl border border-accent/25 bg-accent-soft/45 p-6 sm:p-7">
+              <div className="liquid-glass-tint relative rounded-2xl border border-accent/25 p-6 sm:p-7">
                 <Quote className="size-7 text-accent/80 mb-3" />
                 <p className="text-sm sm:text-base italic leading-relaxed text-foreground/90 font-medium">
                   &ldquo;{t("philosophyText")}&rdquo;

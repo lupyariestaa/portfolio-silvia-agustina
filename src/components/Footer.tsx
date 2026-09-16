@@ -26,9 +26,9 @@ export default function Footer() {
 
   return (
     <footer className="relative overflow-hidden border-t border-border bg-surface">
-      {/* Decorative gradient top accent */}
+      {/* Liquid gradient accent */}
       <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
-      <div className="pointer-events-none absolute -bottom-20 left-1/2 size-[400px] -translate-x-1/2 rounded-full bg-accent-soft/40 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-24 left-1/2 size-[450px] -translate-x-1/2 animate-blob rounded-[55%_45%_38%_62%] bg-accent-soft/40 blur-3xl" />
       <Container className="relative py-16">
         <div className="grid gap-12 md:grid-cols-4">
           {/* Brand */}

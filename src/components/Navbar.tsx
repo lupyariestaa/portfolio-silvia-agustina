@@ -60,7 +60,7 @@ export default function Navbar() {
       <header className="pointer-events-none fixed inset-x-0 top-4 z-50 flex justify-center px-4 md:top-6">
         <nav
           className={`pointer-events-auto flex w-full max-w-5xl items-center justify-between gap-4 rounded-full px-4 py-2.5 transition-all duration-300 md:px-5 ${
-            scrolled ? "glass" : "border border-transparent bg-transparent"
+            scrolled ? "liquid-glass" : "border border-transparent bg-transparent"
           }`}
         >
           {/* Brand */}
@@ -126,7 +126,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 flex flex-col bg-white/92 px-5 pt-24 backdrop-blur-2xl lg:hidden"
+            className="fixed inset-0 z-40 flex flex-col bg-white/90 px-5 pt-24 backdrop-blur-2xl lg:hidden"
           >
             <ul className="flex flex-col gap-1">
               {navItems.map((item) => (
