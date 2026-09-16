@@ -1,6 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 import { useTranslations } from "next-intl";
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle2 } from "lucide-react";
 import Container from "@/components/ui/Container";
@@ -10,26 +13,36 @@ import { Button } from "@/components/ui/Button";
 import { site } from "@/lib/content";
 import { waLink } from "@/lib/whatsapp";
 
+type FormValues = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};
+
 export default function Contact() {
   const t = useTranslations("contact");
   const tBooking = useTranslations("booking");
   const [sent, setSent] = useState(false);
 
-  const [values, setValues] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+  const schema = useMemo(
+    () =>
+      z.object({
+        name: z.string().min(2, { message: tBooking("required") }),
+        email: z.string().email({ message: tBooking("invalidPhone") }),
+        subject: z.string().min(3, { message: tBooking("required") }),
+        message: z.string().min(5, { message: tBooking("required") }),
+      }),
+    [tBooking]
+  );
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setValues((v) => ({ ...v, [e.target.name]: e.target.value }));
-  };
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm<FormValues>({ resolver: zodResolver(schema) });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const onSubmit = (values: FormValues) => {
     const msg = [
       "Halo dr. Silvia,",
       "",
@@ -46,12 +59,14 @@ export default function Contact() {
 
   const inputClass =
     "w-full rounded-xl border border-border bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-accent focus:ring-2 focus:ring-accent/20";
+  const labelClass = "mb-1.5 block text-sm font-medium";
+  const errorClass = "mt-1.5 text-xs text-red-500";
 
   const infoItems = [
     { icon: MapPin, label: t("address"), value: site.address },
     { icon: Phone, label: t("phone"), value: site.phone, href: `tel:${site.phone.replace(/\s/g, "")}` },
     { icon: Mail, label: t("email"), value: site.email, href: `mailto:${site.email}` },
-    { icon: Clock, label: t("hours"), value: "08:00 – 20:00" },
+    { icon: Clock, label: t("hours"), value: "08:00 – 20:00 WIB" },
   ];
 
   return (
@@ -67,7 +82,7 @@ export default function Contact() {
 
         <div className="mt-14 grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
           {/* Info */}
-          <Reveal>
+          <Reveal x={-30}>
             <ul className="flex flex-col gap-6">
               {infoItems.map((item) => (
                 <li key={item.label} className="flex items-start gap-4">
@@ -110,9 +125,9 @@ export default function Contact() {
           </Reveal>
 
           {/* Form */}
-          <Reveal delay={0.1}>
+          <Reveal delay={0.1} x={30}>
             <form
-              onSubmit={handleSubmit}
+              onSubmit={handleSubmit(onSubmit)}
               className="rounded-3xl border border-border bg-surface p-7 md:p-9"
             >
               {sent && (
@@ -124,62 +139,71 @@ export default function Contact() {
 
               <div className="grid gap-5 sm:grid-cols-2">
                 <div>
-                  <label className="mb-1.5 block text-sm font-medium" htmlFor="c-name">
+                  <label className={labelClass} htmlFor="c-name">
                     {t("formName")}
                   </label>
                   <input
                     id="c-name"
-                    name="name"
-                    required
-                    value={values.name}
-                    onChange={handleChange}
+                    {...register("name")}
+                    aria-invalid={Boolean(errors.name)}
                     className={inputClass}
                   />
+                  {errors.name && (
+                    <p className={errorClass}>{errors.name.message}</p>
+                  )}
                 </div>
                 <div>
-                  <label className="mb-1.5 block text-sm font-medium" htmlFor="c-email">
+                  <label className={labelClass} htmlFor="c-email">
                     {t("formEmail")}
                   </label>
                   <input
                     id="c-email"
-                    name="email"
                     type="email"
-                    required
-                    value={values.email}
-                    onChange={handleChange}
+                    {...register("email")}
+                    aria-invalid={Boolean(errors.email)}
                     className={inputClass}
                   />
+                  {errors.email && (
+                    <p className={errorClass}>{errors.email.message}</p>
+                  )}
                 </div>
                 <div className="sm:col-span-2">
-                  <label className="mb-1.5 block text-sm font-medium" htmlFor="c-subject">
+                  <label className={labelClass} htmlFor="c-subject">
                     {t("formSubject")}
                   </label>
                   <input
                     id="c-subject"
-                    name="subject"
-                    required
-                    value={values.subject}
-                    onChange={handleChange}
+                    {...register("subject")}
+                    aria-invalid={Boolean(errors.subject)}
                     className={inputClass}
                   />
+                  {errors.subject && (
+                    <p className={errorClass}>{errors.subject.message}</p>
+                  )}
                 </div>
                 <div className="sm:col-span-2">
-                  <label className="mb-1.5 block text-sm font-medium" htmlFor="c-message">
+                  <label className={labelClass} htmlFor="c-message">
                     {t("formMessage")}
                   </label>
                   <textarea
                     id="c-message"
-                    name="message"
                     rows={4}
-                    required
-                    value={values.message}
-                    onChange={handleChange}
+                    {...register("message")}
+                    aria-invalid={Boolean(errors.message)}
                     className={`${inputClass} resize-none`}
                   />
+                  {errors.message && (
+                    <p className={errorClass}>{errors.message.message}</p>
+                  )}
                 </div>
               </div>
 
-              <Button type="submit" size="lg" className="mt-7 w-full sm:w-auto">
+              <Button
+                type="submit"
+                size="lg"
+                disabled={isSubmitting}
+                className="mt-7 w-full sm:w-auto"
+              >
                 <Send className="size-4" />
                 {t("formSubmit")}
               </Button>

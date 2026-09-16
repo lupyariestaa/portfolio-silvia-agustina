@@ -1,15 +1,15 @@
 import { useTranslations } from "next-intl";
-import { ShieldCheck } from "lucide-react";
+import { ShieldCheck, Building2, HeartPulse, Award, Users } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Reveal from "@/components/ui/Reveal";
 import { organizations } from "@/lib/content";
 
 const trustItems = [
-  "Ikatan Dokter Indonesia (IDI)",
-  "PDUI Cabang Jakarta",
-  "Klinik Sehat Sentosa",
-  "RS Mitra Husada",
-  "Klinik Bunda Medika",
+  { icon: Users, label: "IDI" },
+  { icon: Building2, label: "PDUI Jakarta" },
+  { icon: HeartPulse, label: "Klinik Sehat Sentosa" },
+  { icon: Award, label: "RS Mitra Husada" },
+  { icon: ShieldCheck, label: "Klinik Bunda Medika" },
 ];
 
 export default function TrustBar() {
@@ -29,13 +29,18 @@ export default function TrustBar() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <ul className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">
+          <ul className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-5">
             {trustItems.map((item) => (
               <li
-                key={item}
-                className="flex items-center justify-center rounded-xl border border-border bg-background px-4 py-4 text-center text-xs font-medium text-muted transition-colors hover:border-accent/30 hover:text-foreground md:text-sm"
+                key={item.label}
+                className="flex flex-col items-center gap-2.5 rounded-xl border border-border bg-background px-3 py-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-sm"
               >
-                {item}
+                <span className="flex size-10 items-center justify-center rounded-full bg-accent-soft text-accent">
+                  <item.icon className="size-5" />
+                </span>
+                <span className="text-xs font-medium text-muted sm:text-sm">
+                  {item.label}
+                </span>
               </li>
             ))}
           </ul>

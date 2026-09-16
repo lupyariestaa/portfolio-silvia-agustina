@@ -21,13 +21,23 @@ function WhatsAppIcon({ className }: { className?: string }) {
 export default function WhatsAppButton() {
   const t = useTranslations("common");
   const [show, setShow] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setShow(window.scrollY > 400);
+    const onScroll = () => {
+      const isVisible = window.scrollY > 400;
+      setShow(isVisible);
+      // Auto-expand on first appearance for mobile
+      if (isVisible && !expanded) setExpanded(true);
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    const timer = setTimeout(() => setExpanded(false), 4000);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      clearTimeout(timer);
+    };
+  }, [expanded]);
 
   return (
     <AnimatePresence>
@@ -41,10 +51,23 @@ export default function WhatsAppButton() {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.8, y: 20 }}
           transition={{ type: "spring", stiffness: 300, damping: 22 }}
-          className="group fixed bottom-5 right-5 z-50 flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3.5 text-sm font-medium text-white shadow-lg transition-all hover:pr-5 hover:shadow-xl"
+          onMouseEnter={() => setExpanded(true)}
+          onMouseLeave={() => setExpanded(false)}
+          className="group fixed bottom-5 right-5 z-50 flex items-center gap-2 overflow-hidden rounded-full bg-[#25D366] py-3.5 text-sm font-medium text-white shadow-lg transition-all hover:shadow-xl"
+          style={{ paddingLeft: "0.875rem", paddingRight: expanded ? "1.25rem" : "0.875rem" }}
         >
-          <WhatsAppIcon className="size-5" />
-          <span className="hidden sm:inline">{t("chatWhatsApp")}</span>
+          <WhatsAppIcon className="size-5 shrink-0" />
+          <motion.span
+            initial={{ opacity: 0, width: 0 }}
+            animate={{
+              opacity: expanded ? 1 : 0,
+              width: expanded ? "auto" : 0,
+            }}
+            transition={{ duration: 0.3 }}
+            className="overflow-hidden whitespace-nowrap"
+          >
+            {t("chatWhatsApp")}
+          </motion.span>
         </motion.a>
       )}
     </AnimatePresence>

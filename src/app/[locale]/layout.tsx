@@ -7,6 +7,8 @@ import { routing } from "@/i18n/routing";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import ScrollProgress from "@/components/ScrollProgress";
+import BackToTop from "@/components/BackToTop";
 import { site } from "@/lib/content";
 import "./globals.css";
 
@@ -108,12 +110,14 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <NextIntlClientProvider>
+          <ScrollProgress />
           <Navbar />
           <main id="main-content" className="flex-1">
             {children}
           </main>
           <Footer />
           <WhatsAppButton />
+          <BackToTop />
         </NextIntlClientProvider>
       </body>
     </html>

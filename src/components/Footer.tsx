@@ -25,8 +25,11 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border bg-surface">
-      <Container className="py-16">
+    <footer className="relative overflow-hidden border-t border-border bg-surface">
+      {/* Decorative gradient top accent */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
+      <div className="pointer-events-none absolute -bottom-20 left-1/2 size-[400px] -translate-x-1/2 rounded-full bg-accent-soft/40 blur-3xl" />
+      <Container className="relative py-16">
         <div className="grid gap-12 md:grid-cols-4">
           {/* Brand */}
           <div className="md:col-span-1">
