@@ -122,7 +122,7 @@ export const posts = [
     date: "Feb 2025",
     readTime: 5,
     image:
-      "/images/sleep-placeholder.svg",
+      "https://images.unsplash.com/photo-1686828752370-c0398d724e82?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     featured: true,
   },
   {
@@ -131,7 +131,7 @@ export const posts = [
     date: "Jan 2025",
     readTime: 7,
     image:
-      "/images/nutrition-placeholder.svg",
+      "https://plus.unsplash.com/premium_photo-1700760415890-cb0977f4cda7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     featured: false,
   },
   {
@@ -140,7 +140,7 @@ export const posts = [
     date: "Des 2024",
     readTime: 6,
     image:
-      "/images/prevention-placeholder.svg",
+      "https://images.unsplash.com/photo-1638272467190-4ff6f773315c?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     featured: false,
   },
 ];
