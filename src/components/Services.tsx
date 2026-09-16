@@ -15,7 +15,6 @@ import { Link } from "@/i18n/navigation";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/ui/Reveal";
-import SpotlightCard from "@/components/ui/SpotlightCard";
 import { services } from "@/lib/content";
 
 const iconMap: Record<string, LucideIcon> = {
@@ -49,9 +48,8 @@ export default function Services() {
             const base = `list.${service.slug}`;
             return (
               <Reveal key={service.slug} delay={i * 0.05}>
-                <Link href={`/layanan/${service.slug}`} className="block h-full">
-                  <SpotlightCard className="group flex h-full flex-col rounded-2xl border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-                    <span className="flex size-12 items-center justify-center rounded-2xl bg-accent-soft text-accent transition-colors group-hover:bg-accent group-hover:text-white">
+                <Link href={`/layanan/${service.slug}`} className="group flex h-full flex-col rounded-2xl border border-border bg-background p-6 transition-[border-color,box-shadow] duration-200 hover:border-accent/40 hover:shadow-md focus-visible:border-accent focus-visible:shadow-md motion-reduce:transition-none">
+                    <span className="flex size-12 items-center justify-center rounded-2xl bg-accent-soft text-accent">
                       <Icon className="size-6" />
                     </span>
                     <h3 className="mt-5 text-lg font-semibold">
@@ -62,9 +60,8 @@ export default function Services() {
                     </p>
                     <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent">
                       {t("learnMore")}
-                      <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                      <ArrowRight className="size-4" />
                     </span>
-                  </SpotlightCard>
                 </Link>
               </Reveal>
             );

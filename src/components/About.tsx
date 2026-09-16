@@ -18,6 +18,7 @@ import { site } from "@/lib/content";
 
 export default function About() {
   const t = useTranslations("about");
+  const tHero = useTranslations("hero");
   const bio = t.raw("bio") as string[];
 
   const pillars = [
@@ -70,13 +71,17 @@ export default function About() {
                   className="object-cover"
                 />
                 {/* Floating Doctor Identity Badge */}
-                <div className="absolute inset-x-4 bottom-4 liquid-glass rounded-2xl p-4 shadow-sm">
-                  <p className="text-sm font-bold text-foreground">
+                <div className="absolute inset-x-3 bottom-3 z-10 sm:inset-x-5 sm:bottom-5">
+                  <div className="glass rounded-2xl p-4 sm:p-5">
+                  <p className="break-words text-base font-semibold leading-snug text-foreground sm:text-lg">
                     {site.name}, S.Ked
                   </p>
-                  <p className="text-xs text-accent font-medium">
-                    Dokter Umum · Alumnus FKUI
+                  <p className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-medium leading-relaxed text-accent-hover sm:text-sm">
+                    <span>{tHero("role")}</span>
+                    <span aria-hidden="true">·</span>
+                    <span>{t("highlights.fkui")}</span>
                   </p>
+                  </div>
                 </div>
               </div>
             </Reveal>
